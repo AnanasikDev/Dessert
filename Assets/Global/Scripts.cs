@@ -7,13 +7,16 @@ using UnityEngine;
 /// </summary>
 public class Scripts : MonoBehaviour
 {
-    // example of usage
-    //[SerializeField][Required] public static TYPE _TYPE;
-    //public TYPE TYPE;
+    [SerializeField][Required] public Customer _CharacterPrefab;
+    public static Customer CharacterPrefab;
+
+    [SerializeField][Required] public QueueManager _QueueManager;
+    public static QueueManager QueueManager;
 
     private void Start()
     {
-        //TYPE = _TYPE;
-        //TYPE.Init();
+        CharacterPrefab = _CharacterPrefab;
+        QueueManager = _QueueManager;
+        QueueManager.Init();
     }
 }
