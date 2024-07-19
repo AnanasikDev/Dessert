@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 145822173}
   - component: {fileID: 145822172}
   - component: {fileID: 145822171}
+  - component: {fileID: 145822174}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -158,6 +159,8 @@ MonoBehaviour:
   curvePower: 0.7
   updateDelay: 0.1
   minCustomerDelay: 2
+  firstCustomerPosition: {x: 0, y: 0}
+  nextCustomerPositionShift: {x: -0.3, y: 0}
   debug:
     serializedVersion: 2
     m_Curve: []
@@ -179,6 +182,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _CharacterPrefab: {fileID: 5177101230158128568, guid: 599fcec7a76fe5447b7accb5c462ca1f, type: 3}
   _QueueManager: {fileID: 145822171}
+  _CustomerBuilder: {fileID: 145822174}
 --- !u!4 &145822173
 Transform:
   m_ObjectHideFlags: 0
@@ -194,6 +198,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &145822174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145822170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6233e2973e8046a45be35ff281e9e96c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  datas:
+  - {fileID: 11400000, guid: 1ae7905081c66b045ad93431060dc58f, type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

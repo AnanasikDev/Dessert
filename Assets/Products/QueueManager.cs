@@ -1,4 +1,5 @@
 using NaughtyAttributes;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class QueueManager : MonoBehaviour
@@ -14,13 +15,16 @@ public class QueueManager : MonoBehaviour
     public float minCustomerDelay = 0.9f;
     private float lastTime;
 
-    [ShowNativeProperty] public int queueLength { get; private set; }
+    public Vector2 firstCustomerPosition;
+    public Vector2 nextCustomerPositionShift;
+
+    [ReadOnly][SerializeField] private Queue<Customer> queue;
 
     [ReadOnly] public AnimationCurve debug;
     [ReadOnly] public float currentValue;
     public void Init()
     {
-        queueLength = 0;
+        queue = new Queue<Customer>();
         lastTime = Time.time;
         InvokeRepeating("UpdateQueue", 0, updateDelay);
     }
@@ -45,6 +49,17 @@ public class QueueManager : MonoBehaviour
     private void AddCustomer()
     {
         Debug.Log("New customer!");
-        queueLength++;
+        var customer = Customer.Create(Scripts.CustomerBuilder.BuildCustomer());
+        customer.transform.position = firstCustomerPosition + queue.Count * nextCustomerPositionShift;
+        queue.Enqueue(customer);
+    }
+
+    private void RemoveCustomer()
+    {
+        if (queue.Count == 0) return;
+
+        var first = queue.Dequeue();
+        first.QuitQueue();
+        queue.Peek().Approach();
     }
 }

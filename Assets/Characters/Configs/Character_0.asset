@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f31b197bb43ce6b4fbea5868ad4a7643, type: 3}
   m_Name: Character_0
   m_EditorClassIdentifier: 
-  randomHeadSprites: []
-  randomTorsoSprites: []
+  randomHeadSprites:
+  - {fileID: 21300000, guid: 614506dba0fbac247a2283a4ed4d1580, type: 3}
+  randomTorsoSprites:
+  - {fileID: 21300000, guid: 60baeaa535928d34baa0cd5e149f077e, type: 3}
   targetRelativePriceRange: {x: 0.65, y: 0.8}
   frequency: 0.1
