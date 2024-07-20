@@ -41,6 +41,8 @@ public class Customer : MonoBehaviour
             customer.OnResponseEvent += customer.HandleResponse;
         }
 
+        customer.indexInQueue = indexInQueue;
+
         customer.data = data;
         customer.headRenderer.sprite = data.randomHeadSprites.GetRandom();
         customer.torsoRenderer.sprite = data.randomTorsoSprites.GetRandom();
@@ -64,7 +66,7 @@ public class Customer : MonoBehaviour
     {
         Vector2 range = product.Price * data.targetRelativePriceRange;
         Response response = new Response();
-        response.status = offeredPrice > range.x && offeredPrice < range.y ? ResponseStatus.Accepted : ResponseStatus.Rejected;
+        response.status = ResponseStatus.Accepted;// offeredPrice > range.x && offeredPrice < range.y ? ResponseStatus.Accepted : ResponseStatus.Rejected;
         this.responseStatus = response.status;
         responses++;
         OnResponseEvent?.Invoke(response);
@@ -109,6 +111,8 @@ public class Customer : MonoBehaviour
         // store to the pool
         pool.Push(this);
         OnQuitEvent?.Invoke();
+
+        Debug.Log("Quit");
     }
 
     public void MoveForward()
@@ -131,6 +135,8 @@ public class Customer : MonoBehaviour
 public struct Response
 {
     public ResponseStatus status;
+
+    public Response(ResponseStatus _status) => status = _status;
 }
 
 public struct Request

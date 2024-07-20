@@ -40,13 +40,13 @@ public class DessertTrayController : MonoBehaviour, IPointerDownHandler, IDragHa
         // if there is no customer in the queue
         // or if dessert is not what current customer requested
         // or there is already a dessert on the plate
-        /*if (!Scripts.QueueManager.current || 
-            currentDessert.name != Scripts.QueueManager.current.request.dessert.name ||
+        if (!Scripts.QueueManager.current || 
+            currentDessert.data.name != Scripts.QueueManager.current.request.dessert.name ||
             Scripts.DessertPlate.dessert != null)
         {
             Destroy(currentDessert.gameObject);
             return;
-        }*/
+        }
 
         Scripts.DessertPlate.SetDessert(currentDessert.data);
 

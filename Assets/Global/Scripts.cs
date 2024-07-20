@@ -36,5 +36,6 @@ public class Scripts : MonoBehaviour
 
         PriceController.Init();
         QueueManager.Init();
+        DessertPlate.Init();
     }
 }
