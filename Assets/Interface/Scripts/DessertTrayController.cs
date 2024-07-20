@@ -28,7 +28,6 @@ public class DessertTrayController : MonoBehaviour, IPointerDownHandler, IDragHa
     {
         currentDessert = Instantiate<Dessert>(dessertPrefab, transform.position, transform.rotation, dessertParent);
         currentDessert.Initialize(dessert);
-        
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -38,11 +37,26 @@ public class DessertTrayController : MonoBehaviour, IPointerDownHandler, IDragHa
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        // if there is no customer in the queue
+        // or if dessert is not what current customer requested
+        // or there is already a dessert on the plate
+        /*if (!Scripts.QueueManager.current || 
+            currentDessert.name != Scripts.QueueManager.current.request.dessert.name ||
+            Scripts.DessertPlate.dessert != null)
+        {
+            Destroy(currentDessert.gameObject);
+            return;
+        }*/
+
+        Scripts.DessertPlate.SetDessert(currentDessert.data);
+
         if (RectTransformUtility.RectangleContainsScreenPoint(targetArea, eventData.position))
         {
             Debug.Log("Given");
             OnSelect?.Invoke(dessert);
         }
+
+        // no need to keep it alive, it is displayed on the plate
         Destroy(currentDessert.gameObject);
     }
 }

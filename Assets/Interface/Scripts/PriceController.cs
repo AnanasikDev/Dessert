@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -10,14 +11,16 @@ public class PriceController : MonoBehaviour
     public delegate void OnPriceChanged(int price);
     public OnPriceChanged priceChanged;
 
-    public void Start()
+    public Action<int> OnPriceConfirmed;
+
+    public void Init()
     {
         UpdatePriceText();
     }
 
     public void ConfirmPrice()
     {
-
+        OnPriceConfirmed?.Invoke(_price);
     }
 
     public void changePrice(int dec)

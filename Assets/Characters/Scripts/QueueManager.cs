@@ -18,13 +18,13 @@ public class QueueManager : MonoBehaviour
     public Vector2 firstCustomerPosition;
     public Vector2 nextCustomerPositionShift;
 
-    [ReadOnly][SerializeField] private Queue<Customer> queue;
+    [ReadOnly][SerializeField] private Queue<Customer> queue = new Queue<Customer>();
+    public Customer current { get { return queue.Count == 0 ? null : queue.Peek(); } }
 
     [ReadOnly] public AnimationCurve debug;
     [ReadOnly] public float currentValue;
     public void Init()
     {
-        queue = new Queue<Customer>();
         lastTime = Time.time;
         Customer.OnQuitEvent += RemoveCustomer;
         InvokeRepeating("UpdateQueue", 0, updateDelay);

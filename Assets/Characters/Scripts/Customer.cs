@@ -37,6 +37,7 @@ public class Customer : MonoBehaviour
         {
             customer = Instantiate(Scripts.CharacterPrefab);
             customer.data = data;
+            Scripts.PriceController.OnPriceConfirmed += (int price) => customer.GetResponse(Scripts.DessertPlate.dessert, price);
             customer.OnResponseEvent += customer.HandleResponse;
         }
 
@@ -54,6 +55,7 @@ public class Customer : MonoBehaviour
         request = new Request();
         // choose random product
         request.dessert = Scripts.DessertManager.dessertsDatas.GetRandom();
+        Debug.Log(request.dessert.name + " is requested!");
         OnRequestEvent?.Invoke(request);
         return request;
     }

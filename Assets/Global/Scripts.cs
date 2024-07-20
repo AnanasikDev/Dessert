@@ -19,13 +19,22 @@ public class Scripts : MonoBehaviour
     [SerializeField][Required] public DessertManager _DessertManager;
     public static DessertManager DessertManager;
 
+    [SerializeField][Required] public PriceController _PriceController;
+    public static PriceController PriceController;
+
+    [SerializeField][Required] public DessertPlate _DessertPlate;
+    public static DessertPlate DessertPlate;
+
     private void Start()
     {
         CharacterPrefab = _CharacterPrefab;
         QueueManager = _QueueManager;
         CustomerBuilder = _CustomerBuilder;
         DessertManager = _DessertManager;
+        PriceController = _PriceController;
+        DessertPlate = _DessertPlate;
 
+        PriceController.Init();
         QueueManager.Init();
     }
 }
