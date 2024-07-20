@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31b197bb43ce6b4fbea5868ad4a7643, type: 3}
+  m_Name: Character_0
+  m_EditorClassIdentifier: 
+  randomHeadSprites:
+  - {fileID: 21300000, guid: 614506dba0fbac247a2283a4ed4d1580, type: 3}
+  randomTorsoSprites:
+  - {fileID: 21300000, guid: 60baeaa535928d34baa0cd5e149f077e, type: 3}
+  targetRelativePriceRange: {x: 0.65, y: 0.8}
+  frequency: 0.1
