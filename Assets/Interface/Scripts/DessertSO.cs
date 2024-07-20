@@ -5,7 +5,7 @@ public class DessertSO : ScriptableObject
 {
     [Header("Parameters")]
     [SerializeField]
-    private string name;
+    private new string name;
     [SerializeField]
     private int price;
     [SerializeField]

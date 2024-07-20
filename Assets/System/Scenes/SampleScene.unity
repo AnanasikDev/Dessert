@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 145822172}
   - component: {fileID: 145822171}
   - component: {fileID: 145822174}
-  - component: {fileID: 145822175}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -184,7 +183,7 @@ MonoBehaviour:
   _CharacterPrefab: {fileID: 5177101230158128568, guid: 599fcec7a76fe5447b7accb5c462ca1f, type: 3}
   _QueueManager: {fileID: 145822171}
   _CustomerBuilder: {fileID: 145822174}
-  _ProductManager: {fileID: 145822175}
+  _ProductManager: {fileID: 0}
 --- !u!4 &145822173
 Transform:
   m_ObjectHideFlags: 0
@@ -214,20 +213,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   datas:
   - {fileID: 11400000, guid: 1ae7905081c66b045ad93431060dc58f, type: 2}
---- !u!114 &145822175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 145822170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc7eba4e1f8c6e6428b0feff9ec5a0dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  productsPrefabs:
-  - {fileID: 2407965960070399076, guid: 204a2668a3ed6c84b9a7af0cf1ba855c, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

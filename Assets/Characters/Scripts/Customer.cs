@@ -53,14 +53,14 @@ public class Customer : MonoBehaviour
     {
         request = new Request();
         // choose random product
-        request.product = Scripts.ProductManager.productsPrefabs.GetRandom();
+        request.dessert = Scripts.DessertManager.dessertsDatas.GetRandom();
         OnRequestEvent?.Invoke(request);
         return request;
     }
 
-    public Response GetResponse(Product product, int offeredPrice)
+    public Response GetResponse(DessertSO product, int offeredPrice)
     {
-        Vector2 range = product.defaultPrice * data.targetRelativePriceRange;
+        Vector2 range = product.Price * data.targetRelativePriceRange;
         Response response = new Response();
         response.status = offeredPrice > range.x && offeredPrice < range.y ? ResponseStatus.Accepted : ResponseStatus.Rejected;
         this.responseStatus = response.status;
@@ -133,7 +133,7 @@ public struct Response
 
 public struct Request
 {
-    public Product product;
+    public DessertSO dessert;
 }
 
 public enum ResponseStatus
