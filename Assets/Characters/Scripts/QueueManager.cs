@@ -6,7 +6,7 @@ public class QueueManager : MonoBehaviour
 {
     [Tooltip("Value 0-1 after which a new client will appear")]
     public float threshold;
-    
+
     public float curveFactor = 1.0f;
     public float curvePower = 1.0f;
 
@@ -26,6 +26,7 @@ public class QueueManager : MonoBehaviour
     {
         queue = new Queue<Customer>();
         lastTime = Time.time;
+        Customer.OnQuitEvent += RemoveCustomer;
         InvokeRepeating("UpdateQueue", 0, updateDelay);
     }
 
@@ -46,20 +47,24 @@ public class QueueManager : MonoBehaviour
         return Mathf.Pow(Mathf.PerlinNoise1D(Time.time * curveFactor), curvePower);
     }
 
-    private void AddCustomer()
+    [Button]
+    public void AddCustomer()
     {
         Debug.Log("New customer!");
-        var customer = Customer.Create(Scripts.CustomerBuilder.BuildCustomer());
+        var customer = Customer.Create(Scripts.CustomerBuilder.BuildCustomer(), queue.Count);
         customer.transform.position = firstCustomerPosition + queue.Count * nextCustomerPositionShift;
         queue.Enqueue(customer);
     }
 
-    private void RemoveCustomer()
+    public void RemoveCustomer()
     {
         if (queue.Count == 0) return;
 
         var first = queue.Dequeue();
         first.QuitQueue();
-        queue.Peek().Approach();
+        foreach (var customer in queue)
+        {
+            customer.MoveForward();
+        }
     }
 }

@@ -16,11 +16,15 @@ public class Scripts : MonoBehaviour
     [SerializeField][Required] public CustomerBuilder _CustomerBuilder;
     public static CustomerBuilder CustomerBuilder;
 
+    [SerializeField][Required] public ProductManager _ProductManager;
+    public static ProductManager ProductManager;
+
     private void Start()
     {
         CharacterPrefab = _CharacterPrefab;
         QueueManager = _QueueManager;
         CustomerBuilder = _CustomerBuilder;
+        ProductManager = _ProductManager;
 
         QueueManager.Init();
     }
