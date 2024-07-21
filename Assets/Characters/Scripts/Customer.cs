@@ -9,7 +9,7 @@ public class Customer : MonoBehaviour
     [SerializeField] private SpriteRenderer headRenderer;
     [SerializeField] private SpriteRenderer torsoRenderer;
 
-    public int indexInQueue;
+    public int indexInQueue = -1;
 
     public static Stack<Customer> pool = new Stack<Customer>();
 
@@ -37,15 +37,17 @@ public class Customer : MonoBehaviour
         {
             customer = Instantiate(Scripts.CharacterPrefab);
             customer.data = data;
-            Scripts.PriceController.OnPriceConfirmed += (int price) => customer.GetResponse(Scripts.DessertPlate.dessert, price);
-            customer.OnResponseEvent += customer.HandleResponse;
+            //Scripts.PriceController.OnPriceConfirmed += (int price) => customer.GetResponse(Scripts.DessertPlate.dessert, price);
         }
 
         customer.indexInQueue = indexInQueue;
+        customer.gameObject.name = "Customer " + indexInQueue;
+        customer.responses = 0;
 
         customer.data = data;
         customer.headRenderer.sprite = data.randomHeadSprites.GetRandom();
         customer.torsoRenderer.sprite = data.randomTorsoSprites.GetRandom();
+        customer.headRenderer.color = UnityEngine.Random.ColorHSV();
 
         if (indexInQueue == 0) customer.GetRequest();
 
@@ -57,20 +59,22 @@ public class Customer : MonoBehaviour
         request = new Request();
         // choose random product
         request.dessert = Scripts.DessertManager.dessertsDatas.GetRandom();
-        Debug.Log(request.dessert.name + " is requested!");
         OnRequestEvent?.Invoke(request);
         return request;
     }
 
-    public Response GetResponse(DessertSO product, int offeredPrice)
+    public void GetResponse(DessertSO product, int offeredPrice)
     {
-        Vector2 range = product.Price * data.targetRelativePriceRange;
+        if (indexInQueue != 0) return;
+
+        //Vector2 range = product.Price * data.targetRelativePriceRange;
         Response response = new Response();
         response.status = ResponseStatus.Accepted;// offeredPrice > range.x && offeredPrice < range.y ? ResponseStatus.Accepted : ResponseStatus.Rejected;
         this.responseStatus = response.status;
         responses++;
         OnResponseEvent?.Invoke(response);
-        return response;
+
+        HandleResponse(response);
     }
 
     private void HandleResponse(Response response)
@@ -83,7 +87,6 @@ public class Customer : MonoBehaviour
             // play happy animation
 
             QuitQueue();
-
             return;
         }
 
@@ -98,6 +101,7 @@ public class Customer : MonoBehaviour
             }
         }
 
+        responses++;
     }
 
     public void QuitQueue()
@@ -111,17 +115,19 @@ public class Customer : MonoBehaviour
         // store to the pool
         pool.Push(this);
         OnQuitEvent?.Invoke();
-
-        Debug.Log("Quit");
     }
 
     public void MoveForward()
     {
         indexInQueue--;
+        gameObject.name = "Customer " + indexInQueue;
+        Debug.Log("Moving forward");
+
+        transform.position -= (Scripts.QueueManager.nextCustomerPositionShift * Vector2.one).ConvertTo3D();
 
         // shift object towards default position
 
-        if (indexInQueue > 0) return;
+        if (indexInQueue != 0) return;
 
         // if first in the queue
 

@@ -11,7 +11,7 @@ public class PriceController : MonoBehaviour
     public delegate void OnPriceChanged(int price);
     public OnPriceChanged priceChanged;
 
-    public Action<int> OnPriceConfirmed;
+    //public Action<int> OnPriceConfirmed;
 
     public void Init()
     {
@@ -20,7 +20,8 @@ public class PriceController : MonoBehaviour
 
     public void ConfirmPrice()
     {
-        OnPriceConfirmed?.Invoke(_price);
+        //OnPriceConfirmed?.Invoke(_price);
+        Scripts.QueueManager.current?.GetResponse(Scripts.DessertPlate.dessert, _price);
     }
 
     public void changePrice(int dec)

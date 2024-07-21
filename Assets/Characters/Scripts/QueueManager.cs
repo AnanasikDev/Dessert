@@ -60,8 +60,7 @@ public class QueueManager : MonoBehaviour
     {
         if (queue.Count == 0) return;
 
-        var first = queue.Dequeue();
-        first.QuitQueue();
+        queue.Dequeue(); // already quit just before
         foreach (var customer in queue)
         {
             customer.MoveForward();
