@@ -135,7 +135,7 @@ MonoBehaviour:
   torsoRenderer: {fileID: 3331134075484342655}
   indexInQueue: 0
   responseStatus: 0
-  maxResponses: 1
+  maxResponses: 2
   responses: 0
 --- !u!1 &8992027467949208959
 GameObject:

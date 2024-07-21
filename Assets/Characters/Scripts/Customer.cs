@@ -75,7 +75,7 @@ public class Customer : MonoBehaviour
 
         Vector2 range = product.Price * data.targetRelativePriceRange;
         Response response = new Response();
-        response.status = offeredPrice > range.x && offeredPrice < range.y ? ResponseStatus.Accepted : ResponseStatus.Rejected;
+        response.status = offeredPrice >= range.x && offeredPrice <= range.y ? ResponseStatus.Accepted : ResponseStatus.Rejected;
         this.responseStatus = response.status;
         responses++;
         OnResponseEvent?.Invoke(this, response);
