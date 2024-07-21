@@ -1,4 +1,3 @@
-using NaughtyAttributes;
 using UnityEngine;
 
 [CreateAssetMenu(fileName="Character_", menuName="Character Preset")]
@@ -11,9 +10,9 @@ public class CustomerData : ScriptableObject
     public Vector2 targetRelativePriceRange;
     public float frequency;
 
-    [Multiline][SerializeField] private string _randomRequestTexts;
+    [Multiline(50)][SerializeField] private string _randomRequestTexts;
 
-    [ReadOnly] public string[] randomRequestTexts;
+    [HideInInspector] public string[] randomRequestTexts;
 
     public void PreInit()
     {

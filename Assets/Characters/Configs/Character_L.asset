@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31b197bb43ce6b4fbea5868ad4a7643, type: 3}
+  m_Name: Character_L
+  m_EditorClassIdentifier: 
+  randomHeadSprites:
+  - {fileID: 21300000, guid: 614506dba0fbac247a2283a4ed4d1580, type: 3}
+  randomTorsoSprites:
+  - {fileID: 21300000, guid: 60baeaa535928d34baa0cd5e149f077e, type: 3}
+  targetRelativePriceRange: {x: 0.3, y: 0.8}
+  frequency: 0.1
+  _randomRequestTexts: "Any chance for a little discount today?\r\nI don't have much
+    on me. Can you lower the price a bit?\r\nI love your desserts, but they\u2019re
+    a bit pricey. Any deals today?\r\nCan you give me a small discount? It\u2019s
+    been a rough week.\r\nIs there any way you can reduce the price just a little?\r\nI\u2019m
+    a bit short. Can you help me out with a lower price?\r\nCan I get a small discount
+    if I buy more than one?\r\nDo you have any special offers or discounts today?\r\nI\u2019m
+    a loyal customer. Can I get a bit of a price cut?\r\nI\u2019m on a tight budget.
+    Can you give me a slight discount?\r\nI\u2019m trying to save a bit. Any chance
+    for a discount?\r\nCan you lower the price just a little for me?\r\nI don\u2019t
+    have much to spend. Can you help me out?\r\nAny chance for a small discount today?\r\nI\u2019m
+    a little short on funds. Can you give me a break?\r\nDo you have any special
+    deals today?\r\nI\u2019m on a budget. Can you offer a small discount?\r\nCan
+    you help me out with a slight price reduction?\r\nAny way you can lower the price
+    a bit?\r\nI\u2019m trying to save money. Can you give me a small discount?\r\nI\u2019m
+    a bit short this month. Any chance for a discount?\r\nCan you reduce the price
+    a little for me?\r\nDo you have any discounts available?\r\nI\u2019m on a tight
+    budget. Can you help me out?\r\nAny chance you can lower the price a little?\r\nI\u2019m
+    trying to save up. Can you give me a discount?\r\nCan you offer a small price
+    reduction?\r\nI\u2019m a bit short on cash. Can you help me out?\r\nAny chance
+    for a small price cut today?\r\nI\u2019m trying to save some money. Can you lower
+    the price?\r\nCan you reduce the price just a little?\r\nI\u2019m on a budget.
+    Any chance for a discount?\r\nAny way you can lower the price for me?\r\nI\u2019m
+    a bit tight on funds. Can you help me out?\r\nDo you have any special offers
+    today?\r\nI\u2019m trying to save money. Can you give me a break?\r\nAny chance
+    you can cut the price a bit?\r\nI\u2019m on a tight budget. Can you lower the
+    price?\r\nCan you help me out with a small discount?\r\nI\u2019m trying to save
+    up. Any chance for a price cut?\r\nDo you have any discounts available today?\r\nI\u2019m
+    a bit short. Can you give me a small discount?\r\nAny way to lower the price
+    a little for me?\r\nI\u2019m on a tight budget. Can you help me out?\r\nAny chance
+    for a slight price reduction?\r\nI\u2019m trying to save some money. Can you
+    lower the price?\r\nCan you offer a small discount today?\r\nI\u2019m a bit tight
+    on funds. Can you help me out?\r\nAny way to lower the price for me?\r\nI\u2019m
+    on a budget. Can you offer a small price cut?"
+  randomRequestTexts: []
