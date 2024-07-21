@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class PriceController : MonoBehaviour
 {
-    private int _price = 0;
+    public int price { get; private set; }
 
-    [SerializeField]
-    private TextMeshProUGUI _textMeshPro;
+    [SerializeField] private TextMeshProUGUI priceText;
     public delegate void OnPriceChanged(int price);
     public OnPriceChanged priceChanged;
 
@@ -22,34 +21,33 @@ public class PriceController : MonoBehaviour
     public void ConfirmPrice()
     {
         //OnPriceConfirmed?.Invoke(_price);
-        Scripts.QueueManager.current?.GetResponse(Scripts.DessertPlate.dessert, _price);
+        Scripts.QueueManager.current?.GetResponse(Scripts.DessertPlate.dessert, price);
     }
 
     public void ResetPrice()
     {
-        _price = 0;
+        price = 0;
         UpdatePriceText();
     }
 
     public void changePrice(int dec)
     {
-
         if (dec >= 0)
         {
-            _price = (_price * 10) + dec;
+            price = (price * 10) + dec;
         }
         else
         {
-            _price /= 10;
+            price /= 10;
         }
-        if (_price > 10000)
-            _price = 9999;
-        priceChanged?.Invoke(_price);
+        if (price > 10000)
+            price = 9999;
+        priceChanged?.Invoke(price);
         UpdatePriceText();
     }
 
     private void UpdatePriceText()
     {
-        _textMeshPro.text = _price.ToString();
+        priceText.text = price.ToString();
     }
 }

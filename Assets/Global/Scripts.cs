@@ -31,6 +31,9 @@ public class Scripts : MonoBehaviour
     [SerializeField][Required] public PriceList _PriceList;
     public static PriceList PriceList;
 
+    [SerializeField][Required] public BudgetController _BudgetController;
+    public static BudgetController BudgetController;
+
     private void Start()
     {
         CharacterPrefab = _CharacterPrefab;
@@ -41,6 +44,7 @@ public class Scripts : MonoBehaviour
         RequestPanel = _RequestPanel;
         DessertPlate = _DessertPlate;
         PriceList = _PriceList;
+        BudgetController = _BudgetController;
 
         CustomerBuilder.Init();
         PriceController.Init();
@@ -48,5 +52,6 @@ public class Scripts : MonoBehaviour
         DessertPlate.Init();
         RequestPanel.Init();
         PriceList.Init();
+        BudgetController.Init();
     }
 }

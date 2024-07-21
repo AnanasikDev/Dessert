@@ -16,7 +16,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 614506dba0fbac247a2283a4ed4d1580, type: 3}
   randomTorsoSprites:
   - {fileID: 21300000, guid: 60baeaa535928d34baa0cd5e149f077e, type: 3}
-  targetRelativePriceRange: {x: 1, y: 1.4}
+  targetRelativePriceRange: {x: 1, y: 1.45}
   frequency: 1
   _randomRequestTexts: "I'm celebrating my anniversary today and these look amazing!\r\nI
     just got a big project approved at work. Time for a treat!\r\nI\u2019m taking
@@ -60,13 +60,53 @@ MonoBehaviour:
     treating myself for a job well done. Can't wait to dig in!\r\nJust had a great
     workout. Time for something sweet!"
   randomRequestTexts:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - "I'm celebrating my anniversary today and these look amazing!\r"
+  - "I just got a big project approved at work. Time for a treat!\r"
+  - "I\u2019m taking these home for a little family celebration tonight.\r"
+  - "Just got back from a great vacation. Your desserts are the perfect welcome home!\r"
+  - "I'm rewarding myself for finishing a big task. These look delicious!\r"
+  - "I love bringing your desserts to our game nights. Always a hit!\r"
+  - "It's been a fantastic day. Topping it off with something sweet from here!\r"
+  - "I'm treating myself after a successful presentation. So excited!\r"
+  - "Had a wonderful morning at the beach. These will make it even better.\r"
+  - "I'm in a great mood today and your desserts always make it better!\r"
+  - "Just got promoted! These desserts are my celebration.\r"
+  - "My friends are coming over tonight. These will be a hit!\r"
+  - "I'm treating myself for a job well done. Can't wait to dig in!\r"
+  - "Just had a great workout. Time for something sweet!\r"
+  - "I\u2019m celebrating a milestone today. These look perfect!\r"
+  - "I love surprising my family with your treats. They're the best!\r"
+  - "Just finished a big project. Your desserts are my reward!\r"
+  - "It's a special day for me. These desserts are the perfect treat.\r"
+  - "Had an amazing day at work. These will make it even better!\r"
+  - "I\u2019m treating myself after a productive week. Your desserts never disappoint.\r"
+  - "Just got back from a trip. These desserts are my welcome-home treat.\r"
+  - "I'm celebrating my partner's achievement today. These are perfect!\r"
+  - "Had a great meeting. Time to celebrate with something sweet!\r"
+  - "It's been a successful month. Your desserts are my reward.\r"
+  - "I'm surprising my partner with these. She'll be thrilled!\r"
+  - "Just finished a tough project. These desserts are my treat.\r"
+  - "Had a great day at the park. These will make it even better!\r"
+  - "I'm in a celebratory mood today. Your desserts are perfect!\r"
+  - "Just closed a big deal at work. Time for something sweet!\r"
+  - "I love treating myself to your desserts. Always a delight!\r"
+  - "Had a fantastic week. These desserts are my reward!\r"
+  - "I'm celebrating a friend's birthday today. These will be a hit!\r"
+  - "Just got back from a hike. Time for something delicious!\r"
+  - "I\u2019m treating myself after a successful presentation. So excited!\r"
+  - "Had a great morning. These desserts will make it even better!\r"
+  - "I'm in a great mood today. Your treats always make it better!\r"
+  - "Just got a raise. Time to celebrate with something sweet!\r"
+  - "My family loves your desserts. Can't wait to bring these home!\r"
+  - "Just finished a big project. These are my celebration treat!\r"
+  - "I'm rewarding myself for a job well done. These look delicious!\r"
+  - "Had an amazing day. Your desserts are the perfect end!\r"
+  - "I\u2019m treating myself after a long week. These look amazing!\r"
+  - "Just had a fantastic meeting. Time to celebrate!\r"
+  - "I'm celebrating a small victory today. These are perfect!\r"
+  - "Had a wonderful day out. Your desserts are the perfect treat!\r"
+  - "I'm in a celebratory mood. Your desserts are always a good choice!\r"
+  - "Just got promoted. These treats are my celebration!\r"
+  - "My friends are coming over tonight. These will be a hit!\r"
+  - "I'm treating myself for a job well done. Can't wait to dig in!\r"
+  - Just had a great workout. Time for something sweet!
