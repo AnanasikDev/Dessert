@@ -49,6 +49,10 @@ public class Customer : MonoBehaviour
         customer.torsoRenderer.sprite = data.randomTorsoSprites.GetRandom();
         customer.headRenderer.color = UnityEngine.Random.ColorHSV();
 
+        customer.headRenderer.sortingOrder = indexInQueue;
+        customer.torsoRenderer.sortingOrder = indexInQueue;
+
+
         if (indexInQueue == 0) customer.GetRequest();
 
         return customer;
@@ -59,6 +63,7 @@ public class Customer : MonoBehaviour
         request = new Request();
         // choose random product
         request.dessert = Scripts.DessertManager.dessertsDatas.GetRandom();
+        Debug.Log(request.dessert.name + " is requested!");
         OnRequestEvent?.Invoke(request);
         return request;
     }
@@ -124,6 +129,9 @@ public class Customer : MonoBehaviour
         Debug.Log("Moving forward");
 
         transform.position -= (Scripts.QueueManager.nextCustomerPositionShift * Vector2.one).ConvertTo3D();
+
+        headRenderer.sortingOrder = indexInQueue;
+        torsoRenderer.sortingOrder = indexInQueue;
 
         // shift object towards default position
 
