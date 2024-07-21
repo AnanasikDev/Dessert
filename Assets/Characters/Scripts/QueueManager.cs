@@ -37,6 +37,8 @@ public class QueueManager : MonoBehaviour
 
     public void UpdateQueue()
     {
+        if (!Scripts.Clock.isPlaying) return;
+
         currentValue = Random.value >= peacksThreshold ? 1 : CalculateValue() + Random.Range(randomNoise.x, randomNoise.y);
         debug.AddKey(Time.time, currentValue);
 

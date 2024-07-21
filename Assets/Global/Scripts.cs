@@ -34,6 +34,9 @@ public class Scripts : MonoBehaviour
     [SerializeField][Required] public BudgetController _BudgetController;
     public static BudgetController BudgetController;
 
+    [SerializeField][Required] public Clock _Clock;
+    public static Clock Clock;
+
     private void Start()
     {
         CharacterPrefab = _CharacterPrefab;
@@ -45,6 +48,7 @@ public class Scripts : MonoBehaviour
         DessertPlate = _DessertPlate;
         PriceList = _PriceList;
         BudgetController = _BudgetController;
+        Clock = _Clock;
 
         CustomerBuilder.Init();
         PriceController.Init();

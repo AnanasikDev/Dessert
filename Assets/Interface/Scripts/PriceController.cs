@@ -9,6 +9,7 @@ public class PriceController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI priceText;
     public delegate void OnPriceChanged(int price);
     public OnPriceChanged priceChanged;
+    [SerializeField] private AudioSource audio;
 
     //public Action<int> OnPriceConfirmed;
 
@@ -49,5 +50,11 @@ public class PriceController : MonoBehaviour
     private void UpdatePriceText()
     {
         priceText.text = price.ToString();
+    }
+
+    public void PlayClickSound()
+    {
+        audio.pitch = UnityEngine.Random.Range(0.9f, 1.1f);
+        audio.Play();
     }
 }
