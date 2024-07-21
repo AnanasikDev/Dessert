@@ -38,7 +38,6 @@ public class Customer : MonoBehaviour
         {
             customer = Instantiate(Scripts.CharacterPrefab);
             customer.data = data;
-            //Scripts.PriceController.OnPriceConfirmed += (int price) => customer.GetResponse(Scripts.DessertPlate.dessert, price);
         }
 
         customer.indexInQueue = indexInQueue;
@@ -62,6 +61,7 @@ public class Customer : MonoBehaviour
     public Request GetRequest()
     {
         request = new Request();
+
         // choose random product
         request.dessert = Scripts.DessertManager.dessertsDatas.GetRandom();
         Debug.Log(request.dessert.name + " is requested!");
@@ -73,13 +73,14 @@ public class Customer : MonoBehaviour
     {
         if (indexInQueue != 0) return;
 
-        //Vector2 range = product.Price * data.targetRelativePriceRange;
+        Vector2 range = product.Price * data.targetRelativePriceRange;
         Response response = new Response();
-        response.status = ResponseStatus.Accepted;// offeredPrice > range.x && offeredPrice < range.y ? ResponseStatus.Accepted : ResponseStatus.Rejected;
+        response.status = offeredPrice > range.x && offeredPrice < range.y ? ResponseStatus.Accepted : ResponseStatus.Rejected;
         this.responseStatus = response.status;
         responses++;
         OnResponseEvent?.Invoke(this, response);
 
+        Scripts.RequestPanel.DrawResponse(this, response);
         HandleResponse(response);
     }
 

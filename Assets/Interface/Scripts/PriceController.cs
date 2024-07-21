@@ -16,12 +16,19 @@ public class PriceController : MonoBehaviour
     public void Init()
     {
         UpdatePriceText();
+        Customer.OnQuitEvent += ResetPrice;
     }
 
     public void ConfirmPrice()
     {
         //OnPriceConfirmed?.Invoke(_price);
         Scripts.QueueManager.current?.GetResponse(Scripts.DessertPlate.dessert, _price);
+    }
+
+    public void ResetPrice()
+    {
+        _price = 0;
+        UpdatePriceText();
     }
 
     public void changePrice(int dec)

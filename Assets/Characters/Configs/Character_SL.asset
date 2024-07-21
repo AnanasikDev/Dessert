@@ -16,7 +16,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 614506dba0fbac247a2283a4ed4d1580, type: 3}
   randomTorsoSprites:
   - {fileID: 21300000, guid: 60baeaa535928d34baa0cd5e149f077e, type: 3}
-  targetRelativePriceRange: {x: 0.1, y: 0.6}
+  targetRelativePriceRange: {x: 0, y: 0.7}
   frequency: 0.1
   _randomRequestTexts: "Can you give me a discount? I'm short on cash today.\r\nMy
     kid really wants this, but we can't afford much. Can you help us out?\r\nI saw
@@ -57,13 +57,53 @@ MonoBehaviour:
     you help me out with a special deal?\r\nI\u2019m on a tight budget. Can you give
     me a special price?\r\nAny chance you can lower the price for me?"
   randomRequestTexts:
-  - "Just came from the gym. Your desserts are my favorite post-workout treat!\r"
-  - "I\u2019m celebrating my promotion today! These look perfect.\r"
-  - "I\u2019m meeting some friends later. This will be a nice surprise for them.\r"
-  - "Just finished a great book and thought I'd treat myself here!\r"
-  - "My sister's visiting today. She\u2019s going to love these!\r"
-  - "I'm on my lunch break. These desserts always brighten my day.\r"
-  - "I\u2019ve been looking forward to this all week. Can\u2019t wait to dig in!\r"
-  - "It's a beautiful day, and your desserts make it even better.\r"
-  - "Just had a lovely walk in the park. This is the perfect way to top it off.\r"
-  - I'm taking these to my study group. Everyone's going to be so happy!
+  - "Can you give me a discount? I'm short on cash today.\r"
+  - "My kid really wants this, but we can't afford much. Can you help us out?\r"
+  - "I saw this cheaper elsewhere. Can you match their price?\r"
+  - "Any chance for a special offer? Money's tight this month.\r"
+  - "I love your kiosk, but my budget is really low right now.\r"
+  - "Got any deals for regulars? I've been coming here every week!\r"
+  - "I lost my wallet. Can you give me a super low price just this once?\r"
+  - "Can you cut me a break? I'm saving up for a big expense.\r"
+  - "I'm a student. Can you help me out with a lower price?\r"
+  - "I only have a few coins left. Can you give me a good deal?\r"
+  - "Times are tough. Any chance for a lower price today?\r"
+  - "I'm on a tight budget this month. Can you offer a discount?\r"
+  - "I just need a small treat. Can you give me a special price?\r"
+  - "I've had some unexpected expenses. Can you help me out?\r"
+  - "Can you lower the price a bit? I\u2019m trying to save money.\r"
+  - "I'm on a fixed income. Can you give me a better price?\r"
+  - "Any chance you have a cheaper option?\r"
+  - "I'm trying to make my money last. Can you cut the price for me?\r"
+  - "My paycheck was delayed. Can you offer a discount?\r"
+  - "I'm trying to stay on budget. Any way to lower the price?\r"
+  - "I\u2019m between jobs right now. Can you give me a break?\r"
+  - "I\u2019m really tight on cash. Can you help me out with a discount?\r"
+  - "Can you offer a special price for a loyal customer?\r"
+  - "I\u2019m trying to save for something important. Can you lower the price?\r"
+  - "I\u2019ve had some bad luck lately. Can you give me a better price?\r"
+  - "I\u2019m short on cash. Can you give me a special deal?\r"
+  - "I\u2019m trying to stretch my money. Can you offer a discount?\r"
+  - "Any chance you can lower the price for me?\r"
+  - "I\u2019m on a budget. Can you help me out with a lower price?\r"
+  - "I\u2019ve got limited funds. Can you offer a special price?\r"
+  - "I'm trying to save money. Can you give me a discount?\r"
+  - "Can you help me out with a lower price? I\u2019m on a tight budget.\r"
+  - "I\u2019m saving up for something. Can you give me a better price?\r"
+  - "Any chance you can give me a special deal today?\r"
+  - "I\u2019m on a tight budget. Can you lower the price for me?\r"
+  - "Can you help me out with a discount? Money's tight.\r"
+  - "I'm trying to save money. Any chance for a better price?\r"
+  - "I\u2019m on a limited budget. Can you give me a special price?\r"
+  - "I\u2019m short on cash. Can you help me out with a discount?\r"
+  - "Any chance you can lower the price a bit?\r"
+  - "I'm saving up for something important. Can you cut the price for me?\r"
+  - "Can you offer a special price for today?\r"
+  - "I\u2019m trying to stay on budget. Can you give me a better price?\r"
+  - "I\u2019m on a tight budget. Can you help me out with a lower price?\r"
+  - "Any chance you can give me a discount?\r"
+  - "I'm short on funds. Can you lower the price for me?\r"
+  - "I\u2019m saving money for something. Can you offer a better price?\r"
+  - "Can you help me out with a special deal?\r"
+  - "I\u2019m on a tight budget. Can you give me a special price?\r"
+  - Any chance you can lower the price for me?
