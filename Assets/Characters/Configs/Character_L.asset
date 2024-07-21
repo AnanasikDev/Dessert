@@ -22,8 +22,8 @@ MonoBehaviour:
     on me. Can you lower the price a bit?\r\nI love your desserts, but they\u2019re
     a bit pricey. Any deals today?\r\nCan you give me a small discount? It\u2019s
     been a rough week.\r\nIs there any way you can reduce the price just a little?\r\nI\u2019m
-    a bit short. Can you help me out with a lower price?\r\nCan I get a small discount
-    if I buy more than one?\r\nDo you have any special offers or discounts today?\r\nI\u2019m
+    a bit short. Can you help me out with a lower price?\r\nI am absolutely exhausted
+    with all my work... \r\nThese are good but I won't buy them for that much.\r\nI\u2019m
     a loyal customer. Can I get a bit of a price cut?\r\nI\u2019m on a tight budget.
     Can you give me a slight discount?\r\nI\u2019m trying to save a bit. Any chance
     for a discount?\r\nCan you lower the price just a little for me?\r\nI don\u2019t
@@ -33,24 +33,24 @@ MonoBehaviour:
     you help me out with a slight price reduction?\r\nAny way you can lower the price
     a bit?\r\nI\u2019m trying to save money. Can you give me a small discount?\r\nI\u2019m
     a bit short this month. Any chance for a discount?\r\nCan you reduce the price
-    a little for me?\r\nDo you have any discounts available?\r\nI\u2019m on a tight
-    budget. Can you help me out?\r\nAny chance you can lower the price a little?\r\nI\u2019m
-    trying to save up. Can you give me a discount?\r\nCan you offer a small price
-    reduction?\r\nI\u2019m a bit short on cash. Can you help me out?\r\nAny chance
-    for a small price cut today?\r\nI\u2019m trying to save some money. Can you lower
-    the price?\r\nCan you reduce the price just a little?\r\nI\u2019m on a budget.
-    Any chance for a discount?\r\nAny way you can lower the price for me?\r\nI\u2019m
-    a bit tight on funds. Can you help me out?\r\nDo you have any special offers
-    today?\r\nI\u2019m trying to save money. Can you give me a break?\r\nAny chance
-    you can cut the price a bit?\r\nI\u2019m on a tight budget. Can you lower the
-    price?\r\nCan you help me out with a small discount?\r\nI\u2019m trying to save
-    up. Any chance for a price cut?\r\nDo you have any discounts available today?\r\nI\u2019m
-    a bit short. Can you give me a small discount?\r\nAny way to lower the price
-    a little for me?\r\nI\u2019m on a tight budget. Can you help me out?\r\nAny chance
-    for a slight price reduction?\r\nI\u2019m trying to save some money. Can you
-    lower the price?\r\nCan you offer a small discount today?\r\nI\u2019m a bit tight
-    on funds. Can you help me out?\r\nAny way to lower the price for me?\r\nI\u2019m
-    on a budget. Can you offer a small price cut?"
+    a little for me?\r\nI want to but it cheaper.\r\nI\u2019m on a tight budget.
+    Can you help me out?\r\nAny chance you can lower the price a little?\r\nI\u2019m
+    trying to save up. Can you give me a discount?\r\nAre you really selling these
+    desserts for THAT much?\r\nI\u2019m a bit short on cash. Can you help me out?\r\nAny
+    chance for a small price cut today?\r\nMY money ain't infinite. Please lower
+    the price.\r\nCan you reduce the price just a little?\r\nUhh I\u2019m on a budget..
+    Any chance for a discount?\r\nCould you pleeease make a discount for me?\r\nI\u2019m
+    a bit tight on funds... Can I have this one cheaper?\r\nAny special offers today?\r\nAre
+    you crazy? This isn't worth a penny.\r\nAny chance you can cut the price a bit?\r\nI\u2019m
+    on a tight budget. Can you lower the price?\r\nCan you help me out with a small
+    discount?\r\nSaving my cash currently... Any chance for a price cut?\r\nDo you
+    have any discounts available today?\r\nI am not a complainer, I just really don't
+    have enough rn.\r\nAny way to lower the price a little for me?\r\nI\u2019m on
+    a tight budget. Can you help me out?\r\nMy girlfriend has a birthday today but
+    I am poor. Can I have this one cheap?\r\nI\u2019m trying to save some money.
+    Can you lower the price?\r\nCan you offer a small discount today?\r\nI\u2019m
+    a bit tight on funds. Can you help me out?\r\nAny way to lower the price for
+    me?\r\nI\u2019m on a budget. Can you offer a small price cut?"
   randomRequestTexts:
   - "Any chance for a little discount today?\r"
   - "I don't have much on me. Can you lower the price a bit?\r"

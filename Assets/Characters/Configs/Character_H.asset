@@ -16,49 +16,49 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 614506dba0fbac247a2283a4ed4d1580, type: 3}
   randomTorsoSprites:
   - {fileID: 21300000, guid: 60baeaa535928d34baa0cd5e149f077e, type: 3}
-  targetRelativePriceRange: {x: 1, y: 1.45}
+  targetRelativePriceRange: {x: 1, y: 1.5}
   frequency: 1
-  _randomRequestTexts: "I'm celebrating my anniversary today and these look amazing!\r\nI
-    just got a big project approved at work. Time for a treat!\r\nI\u2019m taking
-    these home for a little family celebration tonight.\r\nJust got back from a great
-    vacation. Your desserts are the perfect welcome home!\r\nI'm rewarding myself
-    for finishing a big task. These look delicious!\r\nI love bringing your desserts
-    to our game nights. Always a hit!\r\nIt's been a fantastic day. Topping it off
-    with something sweet from here!\r\nI'm treating myself after a successful presentation.
-    So excited!\r\nHad a wonderful morning at the beach. These will make it even
-    better.\r\nI'm in a great mood today and your desserts always make it better!\r\nJust
-    got promoted! These desserts are my celebration.\r\nMy friends are coming over
-    tonight. These will be a hit!\r\nI'm treating myself for a job well done. Can't
-    wait to dig in!\r\nJust had a great workout. Time for something sweet!\r\nI\u2019m
-    celebrating a milestone today. These look perfect!\r\nI love surprising my family
-    with your treats. They're the best!\r\nJust finished a big project. Your desserts
-    are my reward!\r\nIt's a special day for me. These desserts are the perfect treat.\r\nHad
+  _randomRequestTexts: "I'm celebrating my anniversary today and these look stunning!\r\nI
+    just got a huge project approved at work. Finally some relax. Time for a treat!\r\nI\u2019m
+    taking these home for a little family celebration tonight. Yay!\r\nJust got back
+    from a great vacation. YOUR desserts are the perfect welcome home!\r\nI'm rewarding
+    myself for finishing a big task. These look deliciousss!!\r\nI love bringing
+    your desserts to our game nights. Always a hit!\r\nIt's been a fantastic day:)
+    Topping it off with something sweet from here!\r\nI'he just had a successful
+    presentation. Ah so excited!\r\nWe had a wonderful morning at the beach. These
+    will make it even better.\r\nI'm in a great mood today and your desserts always
+    make it better!\r\nJust got promoted!!! I am on cloud nine! These desserts are
+    my celebration.\r\nMy friends are coming over tonight. These will be a hit!\r\nI'm
+    treating myself for a job well done. Can't wait to dig in!\r\nJust had a great
+    workout. Time for something sweeeet!\r\nI\u2019m celebrating a large milestone
+    today. These look perfect!\r\nI love surprising my family with your treats. They're
+    the best!\r\nJust finished a MASSIVE project. Such a relief. Your desserts are
+    my reward!\r\nIt's a special day for me. These desserts are the perfect treat.\r\nHad
     an amazing day at work. These will make it even better!\r\nI\u2019m treating
     myself after a productive week. Your desserts never disappoint.\r\nJust got back
     from a trip. These desserts are my welcome-home treat.\r\nI'm celebrating my
     partner's achievement today. These are perfect!\r\nHad a great meeting. Time
-    to celebrate with something sweet!\r\nIt's been a successful month. Your desserts
-    are my reward.\r\nI'm surprising my partner with these. She'll be thrilled!\r\nJust
-    finished a tough project. These desserts are my treat.\r\nHad a great day at
-    the park. These will make it even better!\r\nI'm in a celebratory mood today.
-    Your desserts are perfect!\r\nJust closed a big deal at work. Time for something
-    sweet!\r\nI love treating myself to your desserts. Always a delight!\r\nHad a
-    fantastic week. These desserts are my reward!\r\nI'm celebrating a friend's birthday
-    today. These will be a hit!\r\nJust got back from a hike. Time for something
-    delicious!\r\nI\u2019m treating myself after a successful presentation. So excited!\r\nHad
-    a great morning. These desserts will make it even better!\r\nI'm in a great mood
-    today. Your treats always make it better!\r\nJust got a raise. Time to celebrate
-    with something sweet!\r\nMy family loves your desserts. Can't wait to bring these
-    home!\r\nJust finished a big project. These are my celebration treat!\r\nI'm
-    rewarding myself for a job well done. These look delicious!\r\nHad an amazing
-    day. Your desserts are the perfect end!\r\nI\u2019m treating myself after a long
-    week. These look amazing!\r\nJust had a fantastic meeting. Time to celebrate!\r\nI'm
-    celebrating a small victory today. These are perfect!\r\nHad a wonderful day
-    out. Your desserts are the perfect treat!\r\nI'm in a celebratory mood. Your
-    desserts are always a good choice!\r\nJust got promoted. These treats are my
-    celebration!\r\nMy friends are coming over tonight. These will be a hit!\r\nI'm
-    treating myself for a job well done. Can't wait to dig in!\r\nJust had a great
-    workout. Time for something sweet!"
+    to celebrate with something sweet!\r\nAh it's been such an awesome month. I have
+    done so much stuff.\r\nI'm surprising my girlfriend with these. She'll be thrilled!\r\nJust
+    finished a tough task. These desserts are my treat.\r\nHad a great day at the
+    park. These will make it even better!\r\nI'm in a celebratory mood today. Your
+    desserts are perfect!\r\nFor now, all problems aside, it's time to enjoy some
+    dessert!\r\nMy boyfriend absolutely loves these:)\r\nHad a fantastic week. These
+    desserts are my reward!\r\nI'm celebrating a friend's birthday today. These will
+    be a hit!\r\nJust got back from a hike. Time for something delicious!\r\nI\u2019m
+    treating myself after a successful presentation. So excited!\r\nHad a great morning.
+    These desserts will make it even better!\r\nI'm in a great mood today. Your treats
+    always make it better!\r\nJust got a raise! I am happy af. Time for something
+    sweet!\r\nMy family loves your desserts. Can't wait to bring these home!\r\nJust
+    released my very first game! These are my celebration treat!\r\nMy first song
+    and already a banger! Check it out.\r\nHad an amazing day. Your desserts are
+    the perrrfect end!\r\nI\u2019m treating myself after a long week. These look
+    amazing!\r\nJust had a fantastic date! Ah she is so nice.\r\nI'm celebrating
+    a small victory today. These are perfect!\r\nHad a wonderful day out. Your desserts
+    are the perfect treat!\r\nI'm in a celebratory mood. Your desserts are always
+    a good choice!\r\nJust got promoted. These treats are my celebration!\r\nMy friends
+    are coming over tonight. These will be a hit!\r\nWas dreaming about donuts all
+    day. Can't wait to dig in!\r\nJust had a great workout. Time for something sweet!"
   randomRequestTexts:
   - "I'm celebrating my anniversary today and these look amazing!\r"
   - "I just got a big project approved at work. Time for a treat!\r"

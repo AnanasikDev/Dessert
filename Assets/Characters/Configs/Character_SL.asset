@@ -19,43 +19,43 @@ MonoBehaviour:
   targetRelativePriceRange: {x: 0, y: 0.7}
   frequency: 0.1
   _randomRequestTexts: "Can you give me a discount? I'm short on cash today.\r\nMy
-    kid really wants this, but we can't afford much. Can you help us out?\r\nI saw
-    this cheaper elsewhere. Can you match their price?\r\nAny chance for a special
-    offer? Money's tight this month.\r\nI love your kiosk, but my budget is really
-    low right now.\r\nGot any deals for regulars? I've been coming here every week!\r\nI
-    lost my wallet. Can you give me a super low price just this once?\r\nCan you
-    cut me a break? I'm saving up for a big expense.\r\nI'm a student. Can you help
-    me out with a lower price?\r\nI only have a few coins left. Can you give me a
-    good deal?\r\nTimes are tough. Any chance for a lower price today?\r\nI'm on
-    a tight budget this month. Can you offer a discount?\r\nI just need a small treat.
-    Can you give me a special price?\r\nI've had some unexpected expenses. Can you
-    help me out?\r\nCan you lower the price a bit? I\u2019m trying to save money.\r\nI'm
-    on a fixed income. Can you give me a better price?\r\nAny chance you have a cheaper
-    option?\r\nI'm trying to make my money last. Can you cut the price for me?\r\nMy
-    paycheck was delayed. Can you offer a discount?\r\nI'm trying to stay on budget.
-    Any way to lower the price?\r\nI\u2019m between jobs right now. Can you give
-    me a break?\r\nI\u2019m really tight on cash. Can you help me out with a discount?\r\nCan
-    you offer a special price for a loyal customer?\r\nI\u2019m trying to save for
-    something important. Can you lower the price?\r\nI\u2019ve had some bad luck
-    lately. Can you give me a better price?\r\nI\u2019m short on cash. Can you give
-    me a special deal?\r\nI\u2019m trying to stretch my money. Can you offer a discount?\r\nAny
-    chance you can lower the price for me?\r\nI\u2019m on a budget. Can you help
-    me out with a lower price?\r\nI\u2019ve got limited funds. Can you offer a special
-    price?\r\nI'm trying to save money. Can you give me a discount?\r\nCan you help
-    me out with a lower price? I\u2019m on a tight budget.\r\nI\u2019m saving up
-    for something. Can you give me a better price?\r\nAny chance you can give me
-    a special deal today?\r\nI\u2019m on a tight budget. Can you lower the price
-    for me?\r\nCan you help me out with a discount? Money's tight.\r\nI'm trying
-    to save money. Any chance for a better price?\r\nI\u2019m on a limited budget.
-    Can you give me a special price?\r\nI\u2019m short on cash. Can you help me out
-    with a discount?\r\nAny chance you can lower the price a bit?\r\nI'm saving up
-    for something important. Can you cut the price for me?\r\nCan you offer a special
-    price for today?\r\nI\u2019m trying to stay on budget. Can you give me a better
-    price?\r\nI\u2019m on a tight budget. Can you help me out with a lower price?\r\nAny
-    chance you can give me a discount?\r\nI'm short on funds. Can you lower the price
-    for me?\r\nI\u2019m saving money for something. Can you offer a better price?\r\nCan
-    you help me out with a special deal?\r\nI\u2019m on a tight budget. Can you give
-    me a special price?\r\nAny chance you can lower the price for me?"
+    kid really wants this, but we can't afford much.\r\nI saw this cheaper elsewhere.
+    Can you match their price?\r\nAny chance for a special offer? Money's tight this
+    month.\r\nI love your kiosk, but my budget is really low right now.\r\nGot any
+    deals for regulars? I've been coming here every day!\r\nI lost my wallet. Can
+    you give me a super low price just this once?\r\nCan you cut me a break? I'm
+    saving up for a big expense.\r\nI'm a student. Can you help me out with a lower
+    price?\r\nI only have a few coins left. Can you give me a good deal?\r\nTimes
+    are tough. Any chance for a lower price today?\r\nI'm on a tight budget this
+    month. Can you offer a discount?\r\nI just need a small treat. Can you give me
+    a special price?\r\nI've had some unexpected expenses. Can you help me out?\r\nCan
+    you lower the price? I\u2019m trying to save money.\r\nI'm on a fixed income.
+    Can you give me a better price?\r\nAny chance you have a cheaper option?\r\nI'm
+    trying to make my money last. Can you cut the price for me?\r\nMy paycheck was
+    delayed. Can you offer a discount?\r\nI'm trying to stay on budget. Any way to
+    lower the price?\r\nI\u2019m between jobs right now. Can you give me a break?\r\nI\u2019m
+    really tight on cash. Can you help me out with a discount?\r\nCan you offer a
+    special price for a loyal customer?\r\nI\u2019m trying to save for something
+    important. Can you lower the price?\r\nI\u2019ve had some bad luck lately. Can
+    you give me a better price?\r\nI\u2019m short on cash. Can you give me a special
+    deal?\r\nI\u2019m trying to stretch my money. Can you offer a discount?\r\nAny
+    chance you can lower the price for me?\r\nWe had a bad accident... Ahh...\r\nI\u2019ve
+    got limited funds.\r\nCan you give me a discount?\r\nARE YOU CRAZY? No way I
+    am paying THAT MUCH.\r\nI\u2019m saving up for something. Can you give me a better
+    price?\r\nCan ya help me? Money's tight.\r\nA better price would be better.\r\nTHIS
+    AIN'T WORTH A PENNY\r\nI had so much troubles this week, you don't wanna know.\r\nThat
+    was the worst day in my life. May I... please...\r\nI'm saving up for something
+    important. Can you cut the price for me?\r\nI don't have much unfortunately...\r\nMy
+    partner and I had a huge fight today. I just need something to cheer me up.\r\nMy
+    dog has been sick, and it's been a rough week. I could use a little treat.\r\nI'm
+    feeling so down lately. Everything seems to be going wrong.\r\nMy boss has been
+    on my case all week. I need a pick-me-up.\r\nI've been struggling with my studies.
+    A small treat would really help.\r\nMy kids have been driving me crazy. I just
+    need a little break.\r\nI feel so overwhelmed with everything going on. I need
+    something sweet to distract me.\r\nMy friend and I had a falling out. I could
+    use a little comfort food.\r\nI've been dealing with so much stress lately. A
+    small dessert would be a nice escape.\r\nI\u2019ve been having trouble sleeping.
+    Maybe a little treat will help me feel better."
   randomRequestTexts:
   - "Can you give me a discount? I'm short on cash today.\r"
   - "My kid really wants this, but we can't afford much. Can you help us out?\r"

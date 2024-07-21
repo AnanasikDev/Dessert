@@ -19,47 +19,44 @@ MonoBehaviour:
   targetRelativePriceRange: {x: 0.85, y: 1}
   frequency: 3
   _randomRequestTexts: "Just came from the gym. Your desserts are my favorite post-workout
-    treat!\r\nI\u2019m celebrating my promotion today! These look perfect.\r\nI\u2019m
+    treat!\r\nI\u2019m celebrating my promotion today! These look good.\r\nI\u2019m
     meeting some friends later. This will be a nice surprise for them.\r\nJust finished
-    a great book and thought I'd treat myself here!\r\nMy sister's visiting today.
-    She\u2019s going to love these!\r\nI'm on my lunch break. These desserts always
-    brighten my day.\r\nI\u2019ve been looking forward to this all week. Can\u2019t
-    wait to dig in!\r\nIt's a beautiful day, and your desserts make it even better.\r\nJust
+    a great book and want to *digest* it, if yk what I mean;)\r\nMy sister's visiting
+    today. She\u2019s going to love these!\r\nI'm on my lunch break. These desserts
+    always brighten my day.\r\nI\u2019ve been looking forward to this all week. Can\u2019t
+    wait to dig in!\r\nIt was a fine day but with your desserts it's much better.\r\nJust
     had a lovely walk in the park. This is the perfect way to top it off.\r\nI'm
-    taking these to my study group. Everyone's going to be so happy!\r\nJust wrapped
-    up a big project at work. Time to celebrate with a treat!\r\nI'm here for my
-    usual pick-me-up. Your desserts never disappoint.\r\nIt's been a long day, but
-    your desserts make everything better.\r\nJust got some good news. These are the
-    perfect way to celebrate!\r\nI\u2019ve been craving these all week. So glad I
-    made it today!\r\nMy partner loves your desserts. Can't wait to bring these home!\r\nI\u2019m
-    treating myself after a successful meeting. These look delicious!\r\nJust ran
-    a marathon. These treats are my reward!\r\nI\u2019m catching up with an old friend
-    later. She\u2019ll love these!\r\nYour desserts are my go-to for a sweet escape
-    from work.\r\nJust aced my exam. Time to treat myself with your amazing desserts!\r\nI'm
-    here to get my usual. Always hits the spot!\r\nMy parents are visiting this weekend.
-    These will be a hit!\r\nHad a productive day, so I thought I'd stop by for a
-    treat.\r\nJust got promoted! Time to celebrate with something sweet.\r\nI always
-    look forward to your desserts after my weekly hike.\r\nMy coworkers are going
+    taking these to my study group. Everyone's going to be so happy!\r\nFinally something
+    big is over and I can have a rest.\r\nI'm here for my usual pick-me-up. Your
+    desserts never disappoint.\r\nJust a typical day.\r\nJust got some good news.
+    These are the perfect way to celebrate!\r\nI\u2019ve been craving these all week.
+    So glad I made it today!\r\nMy partner loves your desserts. Can't wait to bring
+    these home!\r\nNothin' special\r\nMaybe this will help me with my anxiety for
+    a little bit?\r\nI\u2019m catching up with an old friend on mine tonight. They\u2019ll
+    love these!\r\nYour desserts are my go-to for a sweet escape from work.\r\nExams
+    are over, hope for best. Wanna chill out\r\nI'm here to get my usual. Always
+    hits the spot!\r\nMy parents are visiting this weekend. These will be a hit!\r\nHad
+    a productive day, so I thought I'd stop by for a treat.\r\nNahh.. this one please.\r\nI
+    always look forward to desserts after my weekly hike.\r\nMy coworkers are going
     to love these. Thanks!\r\nI\u2019m taking these to my book club. Everyone\u2019s
     going to be thrilled!\r\nHad a great day at the beach. These desserts are the
-    perfect end.\r\nI'm picking these up for a family gathering. Everyone loves them!\r\nJust
-    wrapped up a great workout. Time for a treat!\r\nI\u2019m celebrating a small
-    victory today. These are perfect!\r\nMy friends and I always enjoy your desserts
-    on our game nights.\r\nJust got a raise! Your desserts are the perfect way to
-    celebrate.\r\nIt's been a busy week. Your treats are my little indulgence.\r\nI\u2019m
-    here to get my usual. Always the best part of my day!\r\nI\u2019m surprising
-    my partner with these. She\u2019s going to be so happy!\r\nJust finished a tough
-    project. These desserts are my reward!\r\nMy kids have been asking for these
-    all week. They're going to be thrilled!\r\nI'm picking these up for a picnic.
-    They're always a hit!\r\nJust got back from a trip. Your desserts are my welcome-home
-    treat.\r\nI\u2019m celebrating a friend's birthday. These will make it extra
-    special.\r\nHad a long day at work. Your desserts always make it better.\r\nI\u2019m
-    taking these to a family gathering. They're always a hit!\r\nJust finished a
-    great run. Time to reward myself with something sweet.\r\nI\u2019m here for my
-    usual treat. Your desserts never disappoint!\r\nMy sister is visiting, and she
-    loves your treats!\r\nI\u2019m celebrating finishing a big project. These are
-    perfect!\r\nJust had a wonderful day out. Your desserts are the perfect end.\r\nI'm
-    treating myself today. Your desserts are always a good choice."
+    perfect end.\r\nI'm picking these up for a family gathering. Everyone loves them!\r\nMy
+    german girlfriend likes these. Danke!\r\nI\u2019m celebrating a small victory
+    today. These are perfect!\r\nMy friends and I always enjoy your desserts on our
+    game nights.\r\nYour desserts are the perfect way to chill out.\r\nIt has been
+    a busy week.\r\nI\u2019m here to get my usual. Always the best part of my day!\r\nI\u2019m
+    surprising my partner with these. She\u2019s going to be so happy!\r\nJust finished
+    a tough project. These desserts are my reward!\r\nMy kids have been asking for
+    these all week. They're going to be thrilled!\r\nI'm picking these up for a picnic.
+    They're always a hit!\r\nJust give me my order, I don't wanna talk\r\nI\u2019m
+    celebrating a friend's birthday. These will make it extra special.\r\nHad a long
+    day at work. Your desserts always make it better.\r\nI\u2019m taking these to
+    a family gathering. They're always a hit!\r\nJust finished a great run. Time
+    to reward myself with something sweet.\r\nI\u2019m here for my usual treat. Your
+    desserts never disappoint!\r\nMy sister is visiting and she has a sweet tooth.\r\nI\u2019m
+    celebrating finishing a big project. These are perfect!\r\nJust had a wonderful
+    day out. Your desserts are the perfect end.\r\nI'm treating myself today. Your
+    desserts are always a good choice."
   randomRequestTexts:
   - "Just came from the gym. Your desserts are my favorite post-workout treat!\r"
   - "I\u2019m celebrating my promotion today! These look perfect.\r"
