@@ -10,6 +10,9 @@ public class QueueManager : MonoBehaviour
 
     public float curveFactor = 1.0f;
     public float curvePower = 1.0f;
+    public float peacksThreshold = 0.9f;
+
+    public Vector2 randomNoise = new Vector2(-0.125f, 0.125f);
 
     public float updateDelay = 0.1f;
     [Tooltip("Minimum time between two customers emergence")]
@@ -22,8 +25,9 @@ public class QueueManager : MonoBehaviour
     [ReadOnly][SerializeField] private Queue<Customer> queue = new Queue<Customer>();
     public Customer current { get { return queue.Count == 0 ? null : queue.Peek(); } }
 
-    [ReadOnly] public AnimationCurve debug;
+    public AnimationCurve debug;
     [ReadOnly] public float currentValue;
+
     public void Init()
     {
         lastTime = Time.time;
@@ -33,7 +37,7 @@ public class QueueManager : MonoBehaviour
 
     public void UpdateQueue()
     {
-        currentValue = CalculateValue();
+        currentValue = Random.value >= peacksThreshold ? 1 : CalculateValue() + Random.Range(randomNoise.x, randomNoise.y);
         debug.AddKey(Time.time, currentValue);
 
         if (currentValue > threshold && Time.time - lastTime > minCustomerDelay && queue.Count < maxQueueLength)

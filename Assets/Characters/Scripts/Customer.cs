@@ -71,7 +71,7 @@ public class Customer : MonoBehaviour
 
     public void GetResponse(DessertSO product, int offeredPrice)
     {
-        if (indexInQueue != 0) return;
+        if (indexInQueue != 0 || product == null) return;
 
         Vector2 range = product.Price * data.targetRelativePriceRange;
         Response response = new Response();
