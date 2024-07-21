@@ -1,5 +1,6 @@
 using NaughtyAttributes;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,8 +17,8 @@ public class Customer : MonoBehaviour
     public Request request;
     public ResponseStatus responseStatus = ResponseStatus.Pending;
 
-    public Action<Request> OnRequestEvent;
-    public Action<Response> OnResponseEvent;
+    public static Action<Customer, Request> OnRequestEvent;
+    public static Action<Customer, Response> OnResponseEvent;
     public static Action OnQuitEvent;
 
     [SerializeField] private int maxResponses = 2;
@@ -49,8 +50,8 @@ public class Customer : MonoBehaviour
         customer.torsoRenderer.sprite = data.randomTorsoSprites.GetRandom();
         customer.headRenderer.color = UnityEngine.Random.ColorHSV();
 
-        customer.headRenderer.sortingOrder = indexInQueue;
-        customer.torsoRenderer.sortingOrder = indexInQueue;
+        customer.headRenderer.sortingOrder = -indexInQueue;
+        customer.torsoRenderer.sortingOrder = -indexInQueue;
 
 
         if (indexInQueue == 0) customer.GetRequest();
@@ -64,7 +65,7 @@ public class Customer : MonoBehaviour
         // choose random product
         request.dessert = Scripts.DessertManager.dessertsDatas.GetRandom();
         Debug.Log(request.dessert.name + " is requested!");
-        OnRequestEvent?.Invoke(request);
+        OnRequestEvent?.Invoke(this, request);
         return request;
     }
 
@@ -77,7 +78,7 @@ public class Customer : MonoBehaviour
         response.status = ResponseStatus.Accepted;// offeredPrice > range.x && offeredPrice < range.y ? ResponseStatus.Accepted : ResponseStatus.Rejected;
         this.responseStatus = response.status;
         responses++;
-        OnResponseEvent?.Invoke(response);
+        OnResponseEvent?.Invoke(this, response);
 
         HandleResponse(response);
     }
@@ -111,15 +112,27 @@ public class Customer : MonoBehaviour
 
     public void QuitQueue()
     {
-        // play animation
+        IEnumerator animate()
+        {
+            for (int i = 0; i < 50; i++)
+            {
+                transform.position += Vector3.right * 0.06f;
+                yield return new WaitForEndOfFrame();
+            }
+            yield return new WaitForSeconds(0.25f);
+
+            // play animation
+
+            // disable
+            gameObject.SetActive(false);
+            indexInQueue = -1;
+
+            // store to the pool
+            pool.Push(this);
+            OnQuitEvent?.Invoke();
+        }
         
-        // disable
-        gameObject.SetActive(false);
-        indexInQueue = -1;
-        
-        // store to the pool
-        pool.Push(this);
-        OnQuitEvent?.Invoke();
+        StartCoroutine(animate());
     }
 
     public void MoveForward()
@@ -128,21 +141,32 @@ public class Customer : MonoBehaviour
         gameObject.name = "Customer " + indexInQueue;
         Debug.Log("Moving forward");
 
-        transform.position -= (Scripts.QueueManager.nextCustomerPositionShift * Vector2.one).ConvertTo3D();
+        headRenderer.sortingOrder = -indexInQueue;
+        torsoRenderer.sortingOrder = -indexInQueue;
 
-        headRenderer.sortingOrder = indexInQueue;
-        torsoRenderer.sortingOrder = indexInQueue;
-
+        Vector3 shift = -(Scripts.QueueManager.nextCustomerPositionShift * Vector2.one).ConvertTo3D();
+        int frames = 50;
         // shift object towards default position
+        IEnumerator animate()
+        {
+            for (int i = 0; i < frames; i++)
+            {
+                transform.position += shift / frames;
+                yield return new WaitForEndOfFrame();
+            }
+            yield return new WaitForSeconds(0.25f);
 
-        if (indexInQueue != 0) return;
+            if (indexInQueue != 0) yield break;
 
-        // if first in the queue
+            // if first in the queue
 
-        // play request animation?
+            // play request animation?
 
-        // ask products
-        this.request = GetRequest();
+            // ask products
+            this.request = GetRequest();
+        }
+
+        StartCoroutine(animate());
     }
 }
 

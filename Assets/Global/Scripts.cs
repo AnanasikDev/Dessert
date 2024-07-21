@@ -25,6 +25,9 @@ public class Scripts : MonoBehaviour
     [SerializeField][Required] public DessertPlate _DessertPlate;
     public static DessertPlate DessertPlate;
 
+    [SerializeField][Required] public RequestPanel _RequestPanel;
+    public static RequestPanel RequestPanel;
+
     private void Start()
     {
         CharacterPrefab = _CharacterPrefab;
@@ -32,10 +35,13 @@ public class Scripts : MonoBehaviour
         CustomerBuilder = _CustomerBuilder;
         DessertManager = _DessertManager;
         PriceController = _PriceController;
+        RequestPanel = _RequestPanel;
         DessertPlate = _DessertPlate;
 
+        CustomerBuilder.Init();
         PriceController.Init();
         QueueManager.Init();
         DessertPlate.Init();
+        RequestPanel.Init();
     }
 }

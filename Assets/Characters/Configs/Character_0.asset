@@ -18,3 +18,13 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 60baeaa535928d34baa0cd5e149f077e, type: 3}
   targetRelativePriceRange: {x: 0.65, y: 0.8}
   frequency: 0.1
+  _randomRequestTexts: "Just came from the gym. Your desserts are my favorite post-workout
+    treat!\r\nI\u2019m celebrating my promotion today! These look perfect.\r\nI\u2019m
+    meeting some friends later. This will be a nice surprise for them.\r\nJust finished
+    a great book and thought I'd treat myself here!\r\nMy sister's visiting today.
+    She\u2019s going to love these!\r\nI'm on my lunch break. These desserts always
+    brighten my day.\r\nI\u2019ve been looking forward to this all week. Can\u2019t
+    wait to dig in!\r\nIt's a beautiful day, and your desserts make it even better.\r\nJust
+    had a lovely walk in the park. This is the perfect way to top it off.\r\nI'm
+    taking these to my study group. Everyone's going to be so happy!"
+  randomRequestTexts: []
