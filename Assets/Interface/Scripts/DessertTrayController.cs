@@ -19,9 +19,19 @@ public class DessertTrayController : MonoBehaviour, IPointerDownHandler, IDragHa
     
     public delegate void DessertEventHandler(DessertSO dessert);
     public static DessertEventHandler OnSelect;
+
+
     void Start()
     {
         dessertImage.sprite = dessert.Sprite;
+    }
+
+    private void Update()
+    {
+        if (Input.GetMouseButtonUp(0))
+        {
+            ClearSelection();
+        }
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -44,7 +54,7 @@ public class DessertTrayController : MonoBehaviour, IPointerDownHandler, IDragHa
             currentDessert.data.name != Scripts.QueueManager.current.request.dessert.name ||
             Scripts.DessertPlate.dessert != null)
         {
-            Destroy(currentDessert.gameObject);
+            ClearSelection();
             return;
         }
 
@@ -57,6 +67,11 @@ public class DessertTrayController : MonoBehaviour, IPointerDownHandler, IDragHa
         }
 
         // no need to keep it alive, it is displayed on the plate
-        Destroy(currentDessert.gameObject);
+        ClearSelection();
+    }
+
+    private void ClearSelection()
+    {
+        if (currentDessert) Destroy(currentDessert.gameObject);
     }
 }
