@@ -111,6 +111,15 @@ public class Customer : MonoBehaviour
         responses++;
     }
 
+    public void ForceQuit()
+    {
+        // disable
+        gameObject.SetActive(false);
+        indexInQueue = -1;
+
+        // store to the pool
+        pool.Push(this);
+    }
     public void QuitQueue()
     {
         IEnumerator animate()
@@ -124,12 +133,8 @@ public class Customer : MonoBehaviour
 
             // play animation
 
-            // disable
-            gameObject.SetActive(false);
-            indexInQueue = -1;
+            ForceQuit();
 
-            // store to the pool
-            pool.Push(this);
             OnQuitEvent?.Invoke();
         }
         

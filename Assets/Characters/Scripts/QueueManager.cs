@@ -22,7 +22,7 @@ public class QueueManager : MonoBehaviour
     public Vector2 firstCustomerPosition;
     public Vector2 nextCustomerPositionShift;
 
-    [ReadOnly][SerializeField] private Queue<Customer> queue = new Queue<Customer>();
+    [ReadOnly] public Queue<Customer> queue = new Queue<Customer>();
     public Customer current { get { return queue.Count == 0 ? null : queue.Peek(); } }
 
     public AnimationCurve debug;
@@ -72,5 +72,14 @@ public class QueueManager : MonoBehaviour
         {
             customer.MoveForward();
         }
+    }
+
+    public void ForceClear()
+    {
+        foreach (var customer in Scripts.QueueManager.queue)
+        {
+            customer.ForceQuit();
+        }
+        queue.Clear();
     }
 }

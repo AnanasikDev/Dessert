@@ -6,6 +6,7 @@ public class BudgetController : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI budgetText;
     [ShowNativeProperty] public int budget { get; private set; }
+    [ShowNativeProperty] public int dayEarnings { get; private set; }
     [SerializeField] private int defaultBudget = 0;
 
     public void Init()
@@ -22,6 +23,7 @@ public class BudgetController : MonoBehaviour
         }
     }
 
+    public void ClearDayEarnings() => dayEarnings = 0;
     public void AddToBudget(int value)
     {
         if (value > 9999)
@@ -30,6 +32,7 @@ public class BudgetController : MonoBehaviour
         }
 
         budget += value;
+        dayEarnings += value;
 
         budgetText.text = budget.ToString();
     }
