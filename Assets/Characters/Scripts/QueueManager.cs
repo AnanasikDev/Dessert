@@ -6,6 +6,7 @@ public class QueueManager : MonoBehaviour
 {
     [Tooltip("Value 0-1 after which a new client will appear")]
     public float threshold;
+    public int maxQueueLength;
 
     public float curveFactor = 1.0f;
     public float curvePower = 1.0f;
@@ -35,7 +36,7 @@ public class QueueManager : MonoBehaviour
         currentValue = CalculateValue();
         debug.AddKey(Time.time, currentValue);
 
-        if (currentValue > threshold && Time.time - lastTime > minCustomerDelay)
+        if (currentValue > threshold && Time.time - lastTime > minCustomerDelay && queue.Count < maxQueueLength)
         {
             lastTime = Time.time;
             AddCustomer();

@@ -504,7 +504,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Just came from the gym. Your desserts are my favorite post-workout treat!\r"
+  m_text: "I\u2019m short on cash. Can you give me a special deal?\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6740c9cb707402e409c74294edad7777, type: 2}
   m_sharedMaterial: {fileID: -1397802675994870044, guid: 6740c9cb707402e409c74294edad7777, type: 2}
@@ -541,9 +541,9 @@ MonoBehaviour:
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: -5.2
+  m_characterSpacing: -2.51
   m_wordSpacing: 0
-  m_lineSpacing: -29.51
+  m_lineSpacing: -36.2
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -3758,7 +3758,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 164, y: 189}
+  m_AnchoredPosition: {x: -16, y: 177}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1491876189
@@ -4160,11 +4160,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   threshold: 0.7
+  maxQueueLength: 6
   curveFactor: 0.1
   curvePower: 0.7
   updateDelay: 0.1
   minCustomerDelay: 2
-  firstCustomerPosition: {x: 0, y: 0}
+  firstCustomerPosition: {x: -2, y: 0}
   nextCustomerPositionShift: {x: -0.5, y: -0.1}
   debug:
     serializedVersion: 2
@@ -4257,7 +4258,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1f712edd7d36a324981eb1f46054d7a6, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.72
   m_Pitch: 1
   Loop: 1
   Mute: 0
