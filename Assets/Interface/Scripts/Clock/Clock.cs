@@ -59,6 +59,7 @@ public class Clock : MonoBehaviour
             yield return new WaitForSeconds(0.4f);
 
             Scripts.QueueManager.ForceClear();
+            Scripts.RequestPanel.ResetPanel();
 
             earnedText.gameObject.SetActive(true);
             earnedText.text = "Earned this day: " + Scripts.BudgetController.dayEarnings.ToString();
@@ -99,6 +100,7 @@ public class Clock : MonoBehaviour
             newDayButton.interactable = false;
             budgetText.gameObject.SetActive(false);
             earnedText.gameObject.SetActive(false);
+            spendsText.gameObject.SetActive(false);
             animator.SetTrigger("new_day");
             yield return new WaitForSeconds(0.4f);
             isPlaying = true;

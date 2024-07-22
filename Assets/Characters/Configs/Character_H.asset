@@ -17,7 +17,7 @@ MonoBehaviour:
   randomTorsoSprites:
   - {fileID: 21300000, guid: 60baeaa535928d34baa0cd5e149f077e, type: 3}
   targetRelativePriceRange: {x: 1, y: 1.5}
-  frequency: 1
+  frequency: 0.175
   _randomRequestTexts: "I'm celebrating my anniversary today and these look stunning!\r\nI
     just got a huge project approved at work. Finally some relax. Time for a treat!\r\nI\u2019m
     taking these home for a little family celebration tonight. Yay!\r\nJust got back
@@ -67,7 +67,7 @@ MonoBehaviour:
   - "I'm rewarding myself for finishing a big task. These look deliciousss!!\r"
   - "I love bringing your desserts to our game nights. Always a hit!\r"
   - "It's been a fantastic day:) Topping it off with something sweet from here!\r"
-  - "I'he just had a successful presentation. Ah so excited!\r"
+  - "I've just had a successful presentation. Ah so excited!\r"
   - "We had a wonderful morning at the beach. These will make it even better.\r"
   - "I'm in a great mood today and your desserts always make it better!\r"
   - "Just got promoted!!! I am on cloud nine! These desserts are my celebration.\r"

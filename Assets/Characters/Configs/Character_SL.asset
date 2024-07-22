@@ -17,7 +17,7 @@ MonoBehaviour:
   randomTorsoSprites:
   - {fileID: 21300000, guid: 60baeaa535928d34baa0cd5e149f077e, type: 3}
   targetRelativePriceRange: {x: 0, y: 0.7}
-  frequency: 0.1
+  frequency: 0.2
   _randomRequestTexts: "Can you give me a discount? I'm short on cash today.\r\nMy
     kid really wants this, but we can't afford much.\r\nI saw this cheaper elsewhere.
     Can you match their price?\r\nAny chance for a special offer? Money's tight this
@@ -58,11 +58,11 @@ MonoBehaviour:
     Maybe a little treat will help me feel better."
   randomRequestTexts:
   - "Can you give me a discount? I'm short on cash today.\r"
-  - "My kid really wants this, but we can't afford much. Can you help us out?\r"
+  - "My kid really wants this, but we can't afford much.\r"
   - "I saw this cheaper elsewhere. Can you match their price?\r"
   - "Any chance for a special offer? Money's tight this month.\r"
   - "I love your kiosk, but my budget is really low right now.\r"
-  - "Got any deals for regulars? I've been coming here every week!\r"
+  - "Got any deals for regulars? I've been coming here every day!\r"
   - "I lost my wallet. Can you give me a super low price just this once?\r"
   - "Can you cut me a break? I'm saving up for a big expense.\r"
   - "I'm a student. Can you help me out with a lower price?\r"
@@ -71,7 +71,7 @@ MonoBehaviour:
   - "I'm on a tight budget this month. Can you offer a discount?\r"
   - "I just need a small treat. Can you give me a special price?\r"
   - "I've had some unexpected expenses. Can you help me out?\r"
-  - "Can you lower the price a bit? I\u2019m trying to save money.\r"
+  - "Can you lower the price? I\u2019m trying to save money.\r"
   - "I'm on a fixed income. Can you give me a better price?\r"
   - "Any chance you have a cheaper option?\r"
   - "I'm trying to make my money last. Can you cut the price for me?\r"
@@ -85,25 +85,28 @@ MonoBehaviour:
   - "I\u2019m short on cash. Can you give me a special deal?\r"
   - "I\u2019m trying to stretch my money. Can you offer a discount?\r"
   - "Any chance you can lower the price for me?\r"
-  - "I\u2019m on a budget. Can you help me out with a lower price?\r"
-  - "I\u2019ve got limited funds. Can you offer a special price?\r"
-  - "I'm trying to save money. Can you give me a discount?\r"
-  - "Can you help me out with a lower price? I\u2019m on a tight budget.\r"
+  - "We had a bad accident... Ahh...\r"
+  - "I\u2019ve got limited funds.\r"
+  - "Can you give me a discount?\r"
+  - "ARE YOU CRAZY? No way I am paying THAT MUCH.\r"
   - "I\u2019m saving up for something. Can you give me a better price?\r"
-  - "Any chance you can give me a special deal today?\r"
-  - "I\u2019m on a tight budget. Can you lower the price for me?\r"
-  - "Can you help me out with a discount? Money's tight.\r"
-  - "I'm trying to save money. Any chance for a better price?\r"
-  - "I\u2019m on a limited budget. Can you give me a special price?\r"
-  - "I\u2019m short on cash. Can you help me out with a discount?\r"
-  - "Any chance you can lower the price a bit?\r"
+  - "Can ya help me? Money's tight.\r"
+  - "A better price would be better.\r"
+  - "THIS AIN'T WORTH A PENNY\r"
+  - "I had so much troubles this week, you don't wanna know.\r"
+  - "That was the worst day in my life. May I... please...\r"
   - "I'm saving up for something important. Can you cut the price for me?\r"
-  - "Can you offer a special price for today?\r"
-  - "I\u2019m trying to stay on budget. Can you give me a better price?\r"
-  - "I\u2019m on a tight budget. Can you help me out with a lower price?\r"
-  - "Any chance you can give me a discount?\r"
-  - "I'm short on funds. Can you lower the price for me?\r"
-  - "I\u2019m saving money for something. Can you offer a better price?\r"
-  - "Can you help me out with a special deal?\r"
-  - "I\u2019m on a tight budget. Can you give me a special price?\r"
-  - Any chance you can lower the price for me?
+  - "I don't have much unfortunately...\r"
+  - "My partner and I had a huge fight today. I just need something to cheer me up.\r"
+  - "My dog has been sick, and it's been a rough week. I could use a little treat.\r"
+  - "I'm feeling so down lately. Everything seems to be going wrong.\r"
+  - "My boss has been on my case all week. I need a pick-me-up.\r"
+  - "I've been struggling with my studies. A small treat would really help.\r"
+  - "My kids have been driving me crazy. I just need a little break.\r"
+  - "I feel so overwhelmed with everything going on. I need something sweet to distract
+    me.\r"
+  - "My friend and I had a falling out. I could use a little comfort food.\r"
+  - "I've been dealing with so much stress lately. A small dessert would be a nice
+    escape.\r"
+  - "I\u2019ve been having trouble sleeping. Maybe a little treat will help me feel
+    better."

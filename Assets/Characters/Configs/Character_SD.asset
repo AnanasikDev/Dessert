@@ -17,7 +17,7 @@ MonoBehaviour:
   randomTorsoSprites:
   - {fileID: 21300000, guid: 60baeaa535928d34baa0cd5e149f077e, type: 3}
   targetRelativePriceRange: {x: 0.85, y: 1.04}
-  frequency: 3
+  frequency: 0.35
   _randomRequestTexts: "Just came from the gym. Your desserts are my favorite post-workout
     treat!\r\nI\u2019m celebrating my promotion today! These look good.\r\nI\u2019m
     meeting some friends later. This will be a nice surprise for them.\r\nJust finished

@@ -908,7 +908,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arrow: {fileID: 809605208}
-  daySeconds: 420
+  daySeconds: 300
   dayText: {fileID: 1605419779}
   animator: {fileID: 634253208}
   isPlaying: 1
