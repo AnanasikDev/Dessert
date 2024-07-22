@@ -54,6 +54,11 @@ public class Clock : MonoBehaviour
         audioSource.PlayOneShot(audioEndDay);
         IEnumerator animate()
         {
+            newDayButton.interactable = false;
+            newDayButton.gameObject.SetActive(true);
+            restartButton.interactable = false;
+            restartButton.gameObject.SetActive(true);
+
             isPlaying = false;
             animator.SetTrigger("end_day");
             yield return new WaitForSeconds(0.4f);
@@ -74,6 +79,8 @@ public class Clock : MonoBehaviour
             budgetText.gameObject.SetActive(true);
             Scripts.BudgetController.AddToBudget(-daySpendings);
             budgetText.text = "Total budget: " + Scripts.BudgetController.budget.ToString();
+
+            restartButton.interactable = true;
 
             if (Scripts.BudgetController.budget < 0)
             {
@@ -98,6 +105,7 @@ public class Clock : MonoBehaviour
             dayIndex++;
             dayText.text = "Day " + dayIndex;
             newDayButton.interactable = false;
+            restartButton.interactable = false;
             budgetText.gameObject.SetActive(false);
             earnedText.gameObject.SetActive(false);
             spendsText.gameObject.SetActive(false);

@@ -395,7 +395,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &176265504
 RectTransform:
   m_ObjectHideFlags: 0
@@ -920,7 +920,7 @@ MonoBehaviour:
   budgetText: {fileID: 1070118016}
   newDayButton: {fileID: 176265505}
   restartButton: {fileID: 1851516944}
-  daySpendings: 300
+  daySpendings: 0
 --- !u!114 &288305721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7081,7 +7081,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1851516943
 RectTransform:
   m_ObjectHideFlags: 0
