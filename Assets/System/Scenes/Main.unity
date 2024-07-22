@@ -920,7 +920,7 @@ MonoBehaviour:
   budgetText: {fileID: 1070118016}
   newDayButton: {fileID: 176265505}
   restartButton: {fileID: 1851516944}
-  daySpendings: 0
+  daySpendings: 280
 --- !u!114 &288305721
 MonoBehaviour:
   m_ObjectHideFlags: 0

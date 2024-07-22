@@ -16,7 +16,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 614506dba0fbac247a2283a4ed4d1580, type: 3}
   randomTorsoSprites:
   - {fileID: 21300000, guid: 60baeaa535928d34baa0cd5e149f077e, type: 3}
-  targetRelativePriceRange: {x: 0, y: 0.7}
+  targetRelativePriceRange: {x: 0, y: 0.75}
   frequency: 0.2
   _randomRequestTexts: "Can you give me a discount? I'm short on cash today.\r\nMy
     kid really wants this, but we can't afford much.\r\nI saw this cheaper elsewhere.
