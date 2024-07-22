@@ -21,6 +21,8 @@ public class DessertPlate : MonoBehaviour
     public void SetDessert(DessertSO dessert)
     {
         this.dessert = dessert;
+        if (dessert == null) renderer.gameObject.SetActive(false);
+        else renderer.gameObject.SetActive(true);
         renderer.sprite = dessert == null ? null : dessert.Sprite;
     }
 

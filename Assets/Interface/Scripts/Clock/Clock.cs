@@ -11,7 +11,7 @@ public class Clock : MonoBehaviour
     [SerializeField] private int daySeconds = 250;
 
     [SerializeField] private TextMeshProUGUI dayText;
-    private int dayIndex;
+    private int dayIndex = 1;
 
     private float time;
 
@@ -28,6 +28,8 @@ public class Clock : MonoBehaviour
 
     [SerializeField] private Button newDayButton;
     [SerializeField] private Button restartButton;
+
+    [SerializeField] private int daySpendings = 500;
 
     private void Update()
     {
@@ -64,12 +66,12 @@ public class Clock : MonoBehaviour
             yield return new WaitForSeconds(0.25f);
 
             spendsText.gameObject.SetActive(true);
-            spendsText.text = "Spends: " + 500;
+            spendsText.text = "Spends: " + daySpendings;
 
             yield return new WaitForSeconds(0.25f);
 
             budgetText.gameObject.SetActive(true);
-            Scripts.BudgetController.AddToBudget(-500);
+            Scripts.BudgetController.AddToBudget(-daySpendings);
             budgetText.text = "Total budget: " + Scripts.BudgetController.budget.ToString();
 
             if (Scripts.BudgetController.budget < 0)
