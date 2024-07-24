@@ -16,7 +16,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 614506dba0fbac247a2283a4ed4d1580, type: 3}
   randomTorsoSprites:
   - {fileID: 21300000, guid: 60baeaa535928d34baa0cd5e149f077e, type: 3}
-  targetRelativePriceRange: {x: 0, y: 1.4}
+  targetRelativePriceRange: {x: 0, y: 0.9}
   frequency: 0.275
   _randomRequestTexts: "Any chance for a little discount today?\r\nI don't have much
     on me. Can you lower the price a bit?\r\nI love your desserts, but they\u2019re
