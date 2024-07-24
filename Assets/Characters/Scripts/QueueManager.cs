@@ -28,6 +28,11 @@ public class QueueManager : MonoBehaviour
     public AnimationCurve debug;
     [ReadOnly] public float currentValue;
 
+    [ReadOnly] public int totalCustomers = 0;
+    [ReadOnly] public float customersPerMinute;
+
+    private float time { get { return Time.time * 10; } }
+
     public void Init()
     {
         lastTime = Time.time;
@@ -40,18 +45,20 @@ public class QueueManager : MonoBehaviour
         if (!Scripts.Clock.isPlaying) return;
 
         currentValue = Random.value >= peacksThreshold ? 1 : CalculateValue() + Random.Range(randomNoise.x, randomNoise.y);
-        debug.AddKey(Time.time, currentValue);
+        debug.AddKey(time, currentValue);
 
-        if (currentValue > threshold && Time.time - lastTime > minCustomerDelay && queue.Count < maxQueueLength)
+        if (currentValue > threshold && time - lastTime > minCustomerDelay && queue.Count < maxQueueLength)
         {
-            lastTime = Time.time;
+            totalCustomers++;
+            customersPerMinute = totalCustomers / time * 60f;
+            lastTime = time;
             AddCustomer();
         }
     }
 
     private float CalculateValue()
     {
-        return Mathf.Pow(Mathf.PerlinNoise1D(Time.time * curveFactor), curvePower);
+        return Mathf.Pow(Mathf.PerlinNoise1D(time * curveFactor), curvePower);
     }
 
     [Button]
