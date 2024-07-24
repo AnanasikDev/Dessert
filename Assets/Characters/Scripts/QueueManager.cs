@@ -31,7 +31,7 @@ public class QueueManager : MonoBehaviour
     [ReadOnly] public int totalCustomers = 0;
     [ReadOnly] public float customersPerMinute;
 
-    private float time { get { return Time.time * 10; } }
+    private float time { get { return Time.time; } }
 
     public void Init()
     {
