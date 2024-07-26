@@ -17,6 +17,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 397869b49168e4b478ff8cf22b24cb0d, type: 3}
   - {fileID: 21300000, guid: 770823091df5d144999f5216c9977aa5, type: 3}
   - {fileID: 21300000, guid: 4dde7647b519e194abc04b5fc8b5ba67, type: 3}
+  - {fileID: 21300000, guid: 1c92dd71b7725734e893cdedf2ff2eb7, type: 3}
+  - {fileID: 21300000, guid: cbefb2167b907da4c8ecac8b4ad73fe9, type: 3}
+  - {fileID: 21300000, guid: 8580c1e908e62054192c2ff0be28e3a5, type: 3}
+  - {fileID: 21300000, guid: bcd8ae0793594fb4ea411040ee471a8a, type: 3}
   targetRelativePriceRange: {x: 0, y: 0.75}
   frequency: 0.2
   _randomRequestTexts: "Can you give me a discount? I'm short on cash today.\r\nMy

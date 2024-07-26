@@ -16,6 +16,15 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 9d4eb665e63cce84f8fa893e45548b0a, type: 3}
   - {fileID: 21300000, guid: 397869b49168e4b478ff8cf22b24cb0d, type: 3}
   - {fileID: 21300000, guid: 770823091df5d144999f5216c9977aa5, type: 3}
+  - {fileID: 21300000, guid: 4b12f4a34e7abd44292ebca4fa5d5c38, type: 3}
+  - {fileID: 21300000, guid: 1c92dd71b7725734e893cdedf2ff2eb7, type: 3}
+  - {fileID: 21300000, guid: b63a7c1125281454a80d381b43294482, type: 3}
+  - {fileID: 21300000, guid: 9e9c7e7ae9e96754f885b345f3890011, type: 3}
+  - {fileID: 21300000, guid: cbefb2167b907da4c8ecac8b4ad73fe9, type: 3}
+  - {fileID: 21300000, guid: 27cd90ec6c3ed804494a2135239ba5af, type: 3}
+  - {fileID: 21300000, guid: 296a839b050171e41b68a242063f4d36, type: 3}
+  - {fileID: 21300000, guid: 8580c1e908e62054192c2ff0be28e3a5, type: 3}
+  - {fileID: 21300000, guid: bcd8ae0793594fb4ea411040ee471a8a, type: 3}
   targetRelativePriceRange: {x: 0, y: 1.08}
   frequency: 0.35
   _randomRequestTexts: "Just came from the gym. Your desserts are my favorite post-workout
