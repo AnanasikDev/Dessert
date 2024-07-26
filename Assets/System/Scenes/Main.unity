@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 42530363}
   - component: {fileID: 42530362}
   - component: {fileID: 42530361}
+  - component: {fileID: 42530364}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -205,31 +206,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 42530362}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 349815855}
-        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
-        m_MethodName: changePrice
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 349815855}
-        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
-        m_MethodName: PlayClickSound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &42530362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,6 +245,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 42530359}
   m_CullTransparentMesh: 1
+--- !u!114 &42530364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42530359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50d55792f41309c4db264b6562eb948b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPointerDownEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 349815855}
+        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
+        m_MethodName: changePrice
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 349815855}
+        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
+        m_MethodName: PlayClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onPointerUpEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &77915059
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1715,6 +1734,7 @@ GameObject:
   - component: {fileID: 521851946}
   - component: {fileID: 521851945}
   - component: {fileID: 521851944}
+  - component: {fileID: 521851947}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1785,31 +1805,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 521851945}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 349815855}
-        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
-        m_MethodName: changePrice
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 349815855}
-        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
-        m_MethodName: PlayClickSound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &521851945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1848,6 +1844,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 521851942}
   m_CullTransparentMesh: 1
+--- !u!114 &521851947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521851942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50d55792f41309c4db264b6562eb948b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPointerDownEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 349815855}
+        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
+        m_MethodName: changePrice
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 349815855}
+        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
+        m_MethodName: PlayClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onPointerUpEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &554589953
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1974,6 +2012,7 @@ GameObject:
   - component: {fileID: 568649760}
   - component: {fileID: 568649759}
   - component: {fileID: 568649758}
+  - component: {fileID: 568649761}
   m_Layer: 5
   m_Name: Button (7)
   m_TagString: Untagged
@@ -2044,31 +2083,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 568649759}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 349815855}
-        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
-        m_MethodName: changePrice
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: -1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 349815855}
-        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
-        m_MethodName: PlayClickSound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &568649759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2107,6 +2122,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 568649756}
   m_CullTransparentMesh: 1
+--- !u!114 &568649761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568649756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50d55792f41309c4db264b6562eb948b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPointerDownEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 349815855}
+        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
+        m_MethodName: changePrice
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 349815855}
+        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
+        m_MethodName: PlayClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onPointerUpEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &590591637
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2419,6 +2476,7 @@ GameObject:
   - component: {fileID: 630647375}
   - component: {fileID: 630647374}
   - component: {fileID: 630647373}
+  - component: {fileID: 630647376}
   m_Layer: 5
   m_Name: Button (3)
   m_TagString: Untagged
@@ -2489,31 +2547,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 630647374}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 349815855}
-        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
-        m_MethodName: changePrice
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 6
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 349815855}
-        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
-        m_MethodName: PlayClickSound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &630647374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2552,6 +2586,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 630647371}
   m_CullTransparentMesh: 1
+--- !u!114 &630647376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630647371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50d55792f41309c4db264b6562eb948b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPointerDownEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 349815855}
+        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
+        m_MethodName: changePrice
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 349815855}
+        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
+        m_MethodName: PlayClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onPointerUpEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &634253206
 GameObject:
   m_ObjectHideFlags: 0
@@ -3083,6 +3159,7 @@ GameObject:
   - component: {fileID: 917303058}
   - component: {fileID: 917303057}
   - component: {fileID: 917303056}
+  - component: {fileID: 917303059}
   m_Layer: 5
   m_Name: Button (4)
   m_TagString: Untagged
@@ -3153,31 +3230,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 917303057}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 349815855}
-        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
-        m_MethodName: changePrice
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 7
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 349815855}
-        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
-        m_MethodName: PlayClickSound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &917303057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3216,6 +3269,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 917303054}
   m_CullTransparentMesh: 1
+--- !u!114 &917303059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917303054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50d55792f41309c4db264b6562eb948b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPointerDownEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 349815855}
+        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
+        m_MethodName: changePrice
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 7
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 349815855}
+        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
+        m_MethodName: PlayClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onPointerUpEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &957574427
 GameObject:
   m_ObjectHideFlags: 0
@@ -3409,6 +3504,7 @@ GameObject:
   - component: {fileID: 1051499648}
   - component: {fileID: 1051499647}
   - component: {fileID: 1051499646}
+  - component: {fileID: 1051499649}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -3479,31 +3575,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1051499647}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 349815855}
-        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
-        m_MethodName: changePrice
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 349815855}
-        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
-        m_MethodName: PlayClickSound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1051499647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3542,6 +3614,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1051499644}
   m_CullTransparentMesh: 1
+--- !u!114 &1051499649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051499644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50d55792f41309c4db264b6562eb948b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPointerDownEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 349815855}
+        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
+        m_MethodName: changePrice
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 349815855}
+        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
+        m_MethodName: PlayClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onPointerUpEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1056525379
 GameObject:
   m_ObjectHideFlags: 0
@@ -4591,6 +4705,7 @@ GameObject:
   - component: {fileID: 1307303100}
   - component: {fileID: 1307303099}
   - component: {fileID: 1307303098}
+  - component: {fileID: 1307303101}
   m_Layer: 5
   m_Name: Button (6)
   m_TagString: Untagged
@@ -4661,31 +4776,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1307303099}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 349815855}
-        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
-        m_MethodName: changePrice
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 9
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 349815855}
-        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
-        m_MethodName: PlayClickSound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1307303099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4724,6 +4815,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1307303096}
   m_CullTransparentMesh: 1
+--- !u!114 &1307303101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307303096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50d55792f41309c4db264b6562eb948b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPointerDownEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 349815855}
+        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
+        m_MethodName: changePrice
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 9
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 349815855}
+        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
+        m_MethodName: PlayClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onPointerUpEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1352801906
 GameObject:
   m_ObjectHideFlags: 0
@@ -5176,6 +5309,7 @@ GameObject:
   - component: {fileID: 1493080463}
   - component: {fileID: 1493080462}
   - component: {fileID: 1493080461}
+  - component: {fileID: 1493080464}
   m_Layer: 5
   m_Name: Button (8)
   m_TagString: Untagged
@@ -5246,31 +5380,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1493080462}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 349815855}
-        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
-        m_MethodName: changePrice
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 349815855}
-        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
-        m_MethodName: PlayClickSound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1493080462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5309,6 +5419,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1493080459}
   m_CullTransparentMesh: 1
+--- !u!114 &1493080464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493080459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50d55792f41309c4db264b6562eb948b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPointerDownEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 349815855}
+        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
+        m_MethodName: changePrice
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 349815855}
+        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
+        m_MethodName: PlayClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onPointerUpEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1512135026
 GameObject:
   m_ObjectHideFlags: 0
@@ -6000,6 +6152,7 @@ GameObject:
   - component: {fileID: 1581274137}
   - component: {fileID: 1581274136}
   - component: {fileID: 1581274135}
+  - component: {fileID: 1581274138}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -6070,31 +6223,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1581274136}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 349815855}
-        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
-        m_MethodName: changePrice
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 5
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 349815855}
-        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
-        m_MethodName: PlayClickSound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1581274136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6133,6 +6262,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1581274133}
   m_CullTransparentMesh: 1
+--- !u!114 &1581274138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581274133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50d55792f41309c4db264b6562eb948b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPointerDownEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 349815855}
+        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
+        m_MethodName: changePrice
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 349815855}
+        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
+        m_MethodName: PlayClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onPointerUpEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1605419777
 GameObject:
   m_ObjectHideFlags: 0
@@ -6556,6 +6727,7 @@ GameObject:
   - component: {fileID: 1681360067}
   - component: {fileID: 1681360066}
   - component: {fileID: 1681360065}
+  - component: {fileID: 1681360068}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -6626,31 +6798,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1681360066}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 349815855}
-        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
-        m_MethodName: changePrice
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 4
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 349815855}
-        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
-        m_MethodName: PlayClickSound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1681360066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6689,6 +6837,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1681360063}
   m_CullTransparentMesh: 1
+--- !u!114 &1681360068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681360063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50d55792f41309c4db264b6562eb948b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPointerDownEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 349815855}
+        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
+        m_MethodName: changePrice
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 349815855}
+        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
+        m_MethodName: PlayClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onPointerUpEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1718025843
 GameObject:
   m_ObjectHideFlags: 0
@@ -7029,6 +7219,7 @@ GameObject:
   - component: {fileID: 1838304421}
   - component: {fileID: 1838304420}
   - component: {fileID: 1838304419}
+  - component: {fileID: 1838304422}
   m_Layer: 5
   m_Name: Button (5)
   m_TagString: Untagged
@@ -7099,31 +7290,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1838304420}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 349815855}
-        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
-        m_MethodName: changePrice
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 8
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 349815855}
-        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
-        m_MethodName: PlayClickSound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1838304420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7162,6 +7329,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1838304417}
   m_CullTransparentMesh: 1
+--- !u!114 &1838304422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838304417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50d55792f41309c4db264b6562eb948b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPointerDownEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 349815855}
+        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
+        m_MethodName: changePrice
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 8
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 349815855}
+        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
+        m_MethodName: PlayClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onPointerUpEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1851516942
 GameObject:
   m_ObjectHideFlags: 0
@@ -7862,6 +8071,7 @@ GameObject:
   - component: {fileID: 2130604249}
   - component: {fileID: 2130604248}
   - component: {fileID: 2130604247}
+  - component: {fileID: 2130604250}
   m_Layer: 5
   m_Name: Button (9)
   m_TagString: Untagged
@@ -7932,31 +8142,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2130604248}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 349815855}
-        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
-        m_MethodName: ConfirmPrice
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 349815855}
-        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
-        m_MethodName: PlayClickSound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2130604248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7995,6 +8181,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2130604245}
   m_CullTransparentMesh: 1
+--- !u!114 &2130604250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130604245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50d55792f41309c4db264b6562eb948b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPointerDownEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 349815855}
+        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
+        m_MethodName: ConfirmPrice
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 349815855}
+        m_TargetAssemblyTypeName: PriceController, Assembly-CSharp
+        m_MethodName: PlayClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onPointerUpEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
