@@ -21,8 +21,11 @@ public class QueueManager : MonoBehaviour
 
     public Vector2 firstCustomerPosition;
     public Vector2 nextCustomerPositionShift;
+    public Vector2 firstCustomerScale;
+    public Vector2 nextCustomerScaleShift;
 
     [ReadOnly] public Queue<Customer> queue = new Queue<Customer>();
+    public Transform customersHandler;
     public Customer current { get { return queue.Count == 0 ? null : queue.Peek(); } }
 
     public AnimationCurve debug;
@@ -66,7 +69,8 @@ public class QueueManager : MonoBehaviour
     {
         Debug.Log("New customer!");
         var customer = Customer.Create(Scripts.CustomerBuilder.BuildCustomer(), queue.Count);
-        customer.transform.position = firstCustomerPosition + queue.Count * nextCustomerPositionShift;
+        customer.transform.localPosition = firstCustomerPosition + queue.Count * nextCustomerPositionShift;
+        customer.transform.localScale = firstCustomerScale + queue.Count * nextCustomerScaleShift;
         queue.Enqueue(customer);
     }
 

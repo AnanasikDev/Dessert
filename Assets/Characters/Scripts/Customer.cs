@@ -3,12 +3,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Customer : MonoBehaviour
 {
     [SerializeField][ReadOnly] public CustomerData data;
-    [SerializeField] private SpriteRenderer headRenderer;
-    [SerializeField] private SpriteRenderer torsoRenderer;
+    [SerializeField] private Image headRenderer;
+    [SerializeField] private Transform customersHandler;
 
     public int indexInQueue = -1;
 
@@ -24,6 +25,8 @@ public class Customer : MonoBehaviour
     [SerializeField] private int maxResponses = 2;
     [ReadOnly][SerializeField] private int responses = 0;
 
+    [SerializeField] private Vector2 quitShift;
+
 
     public static Customer Create(CustomerData data, int indexInQueue)
     {
@@ -38,6 +41,7 @@ public class Customer : MonoBehaviour
         {
             customer = Instantiate(Scripts.CharacterPrefab);
             customer.data = data;
+            customer.transform.SetParent(Scripts.QueueManager.customersHandler);
         }
 
         customer.indexInQueue = indexInQueue;
@@ -46,11 +50,8 @@ public class Customer : MonoBehaviour
 
         customer.data = data;
         customer.headRenderer.sprite = data.randomHeadSprites.GetRandom();
-        customer.torsoRenderer.sprite = data.randomTorsoSprites.GetRandom();
-        customer.headRenderer.color = UnityEngine.Random.ColorHSV();
 
-        customer.headRenderer.sortingOrder = -indexInQueue;
-        customer.torsoRenderer.sortingOrder = -indexInQueue;
+        //customer.headRenderer.sortingOrder = -indexInQueue;
 
 
         if (indexInQueue == 0) customer.GetRequest();
@@ -124,9 +125,10 @@ public class Customer : MonoBehaviour
     {
         IEnumerator animate()
         {
-            for (int i = 0; i < 50; i++)
+            int frames = 50;
+            for (int i = 0; i < frames; i++)
             {
-                transform.position += Vector3.right * 0.06f;
+                transform.position += (quitShift).ConvertTo3D() / frames;
                 yield return new WaitForEndOfFrame();
             }
             yield return new WaitForSeconds(0.25f);
@@ -147,10 +149,10 @@ public class Customer : MonoBehaviour
         gameObject.name = "Customer " + indexInQueue;
         Debug.Log("Moving forward");
 
-        headRenderer.sortingOrder = -indexInQueue;
-        torsoRenderer.sortingOrder = -indexInQueue;
+        //headRenderer.sortingOrder = -indexInQueue;
 
         Vector3 shift = -(Scripts.QueueManager.nextCustomerPositionShift * Vector2.one).ConvertTo3D();
+        Vector3 scaleShift = -(Scripts.QueueManager.nextCustomerScaleShift * Vector2.one).ConvertTo3D();
         int frames = 50;
         // shift object towards default position
         IEnumerator animate()
@@ -158,6 +160,7 @@ public class Customer : MonoBehaviour
             for (int i = 0; i < frames; i++)
             {
                 transform.position += shift / frames;
+                transform.localScale += scaleShift / frames;
                 yield return new WaitForEndOfFrame();
             }
             yield return new WaitForSeconds(0.25f);
