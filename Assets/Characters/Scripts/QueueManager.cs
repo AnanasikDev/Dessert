@@ -69,8 +69,10 @@ public class QueueManager : MonoBehaviour
     {
         Debug.Log("New customer!");
         var customer = Customer.Create(Scripts.CustomerBuilder.BuildCustomer(), queue.Count);
-        customer.transform.localPosition = firstCustomerPosition + queue.Count * nextCustomerPositionShift;
-        customer.transform.localScale = firstCustomerScale + queue.Count * nextCustomerScaleShift;
+
+        customer.SetLocalPosition(firstCustomerPosition + queue.Count * nextCustomerPositionShift);
+        customer.SetScale(firstCustomerScale + queue.Count * nextCustomerScaleShift);
+        
         queue.Enqueue(customer);
     }
 

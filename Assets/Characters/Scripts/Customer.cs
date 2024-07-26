@@ -9,6 +9,7 @@ public class Customer : MonoBehaviour
 {
     [SerializeField][ReadOnly] public CustomerData data;
     [SerializeField] private Image headRenderer;
+    [SerializeField] private Transform headRendererHandler;
     [SerializeField] private Transform customersHandler;
 
     public int indexInQueue = -1;
@@ -57,6 +58,26 @@ public class Customer : MonoBehaviour
         if (indexInQueue == 0) customer.GetRequest();
 
         return customer;
+    }
+
+    public void AddLocalPosition(Vector2 shift)
+    {
+        transform.localPosition += shift.ConvertTo3D();
+    }
+
+    public void SetLocalPosition(Vector2 position)
+    {
+        transform.localPosition = position.ConvertTo3D();
+    }
+
+    public void AddScale(Vector2 shift)
+    {
+        headRendererHandler.transform.localScale += shift.ConvertTo3D();
+    }
+
+    public void SetScale(Vector2 scale)
+    {
+        headRendererHandler.transform.localScale = scale;
     }
 
     public Request GetRequest()
@@ -128,7 +149,7 @@ public class Customer : MonoBehaviour
             int frames = 50;
             for (int i = 0; i < frames; i++)
             {
-                transform.position += (quitShift).ConvertTo3D() / frames;
+                AddLocalPosition(quitShift.ConvertTo3D() / frames);
                 yield return new WaitForEndOfFrame();
             }
             yield return new WaitForSeconds(0.25f);
@@ -159,8 +180,8 @@ public class Customer : MonoBehaviour
         {
             for (int i = 0; i < frames; i++)
             {
-                transform.position += shift / frames;
-                transform.localScale += scaleShift / frames;
+                AddLocalPosition(shift / (float)frames);
+                AddScale(scaleShift / (float)frames);
                 yield return new WaitForEndOfFrame();
             }
             yield return new WaitForSeconds(0.25f);
